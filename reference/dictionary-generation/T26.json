@@ -1,0 +1,12 @@
+{
+  "id": "T26",
+  "image": "/assets/dictionary/things/suklay.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-423db555-5012-4f69-8a08-3b2a365c9ce8.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Suklay (Comb). Subject: one simple comb with clearly visible teeth. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Match the apple and pencil reference style for objects: simplified recognizable form, soft colorful polished shading, no added face or limbs. White or very pale neutral background. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "22d08b4892676c2eb3f940ae1e01b2274099a699ee9de667229a398a6c82b5b6",
+  "bytes": 21976,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

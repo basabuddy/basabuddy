@@ -1,0 +1,12 @@
+{
+  "id": "F09",
+  "image": "/assets/dictionary/food/pakwan.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-ea548697-7bed-45b5-a28e-9e27b76be744.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Pakwan (Watermelon). Subject: one round watermelon with a small red slice. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Match the apple and pencil reference style for objects: simplified recognizable form, soft colorful polished shading, no added face or limbs. White or very pale neutral background. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "4ffa211dee5276d3cff95d997576042777ae64e6117b51b81d308c54b12ce1f5",
+  "bytes": 32076,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

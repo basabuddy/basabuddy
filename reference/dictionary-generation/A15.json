@@ -1,0 +1,12 @@
+{
+  "id": "A15",
+  "image": "/assets/dictionary/animals/bubuyog.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-8559bd93-9d36-465e-b96e-99c83fb0e460.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Bubuyog (Bee). Subject: one friendly bee with six legs, two antennae and wings. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Use the animal references' big sparkling dark eyes, friendly smile and appealing rounded proportions, anatomically recognizable; whole animal centered. Pale pastel background matching existing cards. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "8c2a0e1f5d07c289765ac2f4baf3819399636c7d63bda4330a81960aa37ce2ce",
+  "bytes": 31390,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

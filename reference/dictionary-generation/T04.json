@@ -1,0 +1,12 @@
+{
+  "id": "T04",
+  "image": "/assets/dictionary/things/gunting.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-a6c8c972-1e2a-43d6-be6a-bb6cf7de32a3.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Gunting (Scissors). Subject: one pair of child-safe blunt-ended school scissors. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Match the apple and pencil reference style for objects: simplified recognizable form, soft colorful polished shading, no added face or limbs. White or very pale neutral background. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "86615105b20fb11d037eb71c74ce840509fec24d62f0e64cb4ea6333456cc3f0",
+  "bytes": 20996,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

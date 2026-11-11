@@ -1,0 +1,12 @@
+{
+  "id": "T36",
+  "image": "/assets/dictionary/things/kotse.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-0844def8-60db-4212-b98c-5019aa4ce033.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Kotse (Car). Subject: one friendly small passenger car, no face, no brand, no plate text. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Match the apple and pencil reference style for objects: simplified recognizable form, soft colorful polished shading, no added face or limbs. White or very pale neutral background. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "52e55fb18e943d376465260afb73544ae4f08d87dbe5b0e6854914452a5a395f",
+  "bytes": 32110,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

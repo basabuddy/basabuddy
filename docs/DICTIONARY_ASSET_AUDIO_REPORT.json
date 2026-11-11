@@ -1,0 +1,1606 @@
+{
+  "entries": 90,
+  "illustrations": 90,
+  "errors": [],
+  "missingFilipinoRecordings": [],
+  "missingEnglishRecordings": [
+    {
+      "id": "A04",
+      "text": "Fish"
+    },
+    {
+      "id": "A05",
+      "text": "Chicken"
+    },
+    {
+      "id": "A06",
+      "text": "Cow"
+    },
+    {
+      "id": "A07",
+      "text": "Carabao"
+    },
+    {
+      "id": "A08",
+      "text": "Pig"
+    },
+    {
+      "id": "A09",
+      "text": "Goat"
+    },
+    {
+      "id": "A10",
+      "text": "Horse"
+    },
+    {
+      "id": "A11",
+      "text": "Duck"
+    },
+    {
+      "id": "A12",
+      "text": "Frog"
+    },
+    {
+      "id": "A13",
+      "text": "Butterfly"
+    },
+    {
+      "id": "A14",
+      "text": "Ant"
+    },
+    {
+      "id": "A15",
+      "text": "Bee"
+    },
+    {
+      "id": "A16",
+      "text": "Mosquito"
+    },
+    {
+      "id": "A18",
+      "text": "Snake"
+    },
+    {
+      "id": "A19",
+      "text": "Rat"
+    },
+    {
+      "id": "A21",
+      "text": "Lion"
+    },
+    {
+      "id": "A22",
+      "text": "Tiger"
+    },
+    {
+      "id": "A23",
+      "text": "Elephant"
+    },
+    {
+      "id": "A24",
+      "text": "Monkey"
+    },
+    {
+      "id": "A25",
+      "text": "Crocodile"
+    },
+    {
+      "id": "F01",
+      "text": "Cooked Rice"
+    },
+    {
+      "id": "F02",
+      "text": "Bread"
+    },
+    {
+      "id": "F03",
+      "text": "Egg"
+    },
+    {
+      "id": "F04",
+      "text": "Milk"
+    },
+    {
+      "id": "F05",
+      "text": "Water"
+    },
+    {
+      "id": "F06",
+      "text": "Banana"
+    },
+    {
+      "id": "F07",
+      "text": "Mango"
+    },
+    {
+      "id": "F09",
+      "text": "Watermelon"
+    },
+    {
+      "id": "F10",
+      "text": "Pineapple"
+    },
+    {
+      "id": "F11",
+      "text": "Papaya"
+    },
+    {
+      "id": "F12",
+      "text": "Grapes"
+    },
+    {
+      "id": "F13",
+      "text": "Guava"
+    },
+    {
+      "id": "F14",
+      "text": "Coconut"
+    },
+    {
+      "id": "F15",
+      "text": "Corn"
+    },
+    {
+      "id": "F16",
+      "text": "Carrot"
+    },
+    {
+      "id": "F17",
+      "text": "Tomato"
+    },
+    {
+      "id": "F18",
+      "text": "Eggplant"
+    },
+    {
+      "id": "F19",
+      "text": "Potato"
+    },
+    {
+      "id": "F20",
+      "text": "Cabbage"
+    },
+    {
+      "id": "F21",
+      "text": "Cheese"
+    },
+    {
+      "id": "F22",
+      "text": "Sugar"
+    },
+    {
+      "id": "F23",
+      "text": "Salt"
+    },
+    {
+      "id": "F24",
+      "text": "Soup"
+    },
+    {
+      "id": "F25",
+      "text": "Ice Cream"
+    },
+    {
+      "id": "T01",
+      "text": "Pencil"
+    },
+    {
+      "id": "T02",
+      "text": "Book"
+    },
+    {
+      "id": "T03",
+      "text": "Paper"
+    },
+    {
+      "id": "T04",
+      "text": "Scissors"
+    },
+    {
+      "id": "T05",
+      "text": "Glue"
+    },
+    {
+      "id": "T06",
+      "text": "Eraser"
+    },
+    {
+      "id": "T07",
+      "text": "Bag"
+    },
+    {
+      "id": "T08",
+      "text": "Table"
+    },
+    {
+      "id": "T09",
+      "text": "Chair"
+    },
+    {
+      "id": "T10",
+      "text": "Door"
+    },
+    {
+      "id": "T11",
+      "text": "Window"
+    },
+    {
+      "id": "T12",
+      "text": "Clock"
+    },
+    {
+      "id": "T13",
+      "text": "Shoes"
+    },
+    {
+      "id": "T14",
+      "text": "Umbrella"
+    },
+    {
+      "id": "T15",
+      "text": "Toy"
+    },
+    {
+      "id": "T16",
+      "text": "Ball"
+    },
+    {
+      "id": "T17",
+      "text": "Doll"
+    },
+    {
+      "id": "T18",
+      "text": "Bed"
+    },
+    {
+      "id": "T19",
+      "text": "Pillow"
+    },
+    {
+      "id": "T20",
+      "text": "Blanket"
+    },
+    {
+      "id": "T21",
+      "text": "Glass"
+    },
+    {
+      "id": "T22",
+      "text": "Plate"
+    },
+    {
+      "id": "T23",
+      "text": "Spoon"
+    },
+    {
+      "id": "T24",
+      "text": "Fork"
+    },
+    {
+      "id": "T25",
+      "text": "Mirror"
+    },
+    {
+      "id": "T26",
+      "text": "Comb"
+    },
+    {
+      "id": "T27",
+      "text": "Toothbrush"
+    },
+    {
+      "id": "T28",
+      "text": "Soap"
+    },
+    {
+      "id": "T29",
+      "text": "Clothes"
+    },
+    {
+      "id": "T30",
+      "text": "Telephone"
+    },
+    {
+      "id": "T31",
+      "text": "Key"
+    },
+    {
+      "id": "T32",
+      "text": "Light"
+    },
+    {
+      "id": "T33",
+      "text": "Broom"
+    },
+    {
+      "id": "T34",
+      "text": "Bucket"
+    },
+    {
+      "id": "T35",
+      "text": "Bicycle"
+    },
+    {
+      "id": "T36",
+      "text": "Car"
+    },
+    {
+      "id": "T37",
+      "text": "Boat"
+    },
+    {
+      "id": "T38",
+      "text": "Balloon"
+    },
+    {
+      "id": "T39",
+      "text": "Crayon"
+    },
+    {
+      "id": "T40",
+      "text": "Blackboard"
+    }
+  ],
+  "records": [
+    {
+      "id": "A01",
+      "filipino": "Aso",
+      "english": "Dog",
+      "image": "/assets/dictionary/animals/aso.webp",
+      "bytes": 26286,
+      "sha256": "9f53e99b25ca10c210ba36d2f95902215060db314e28e08839ec945e635bb096",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-c3dfad583392.wav",
+      "englishAudio": "/audio/en-f5b447fe5d6a.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A02",
+      "filipino": "Pusa",
+      "english": "Cat",
+      "image": "/assets/dictionary/animals/pusa.webp",
+      "bytes": 13978,
+      "sha256": "ffce2bc0b1844f19b6f7ef1648d95fbb7065fdfe16186b157ee1ba1d22e888aa",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-2c4d3b136d54.wav",
+      "englishAudio": "/audio/en-fe4677150e20.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A03",
+      "filipino": "Ibon",
+      "english": "Bird",
+      "image": "/assets/dictionary/animals/ibon.webp",
+      "bytes": 19562,
+      "sha256": "8987e6ef51f65eff209bd4de537c47cd3fa6b0b468ca1c3c48ed6033213f2930",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-f1e43a6d8091.wav",
+      "englishAudio": "/audio/en-1e96a05d6deb.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A04",
+      "filipino": "Isda",
+      "english": "Fish",
+      "image": "/assets/dictionary/animals/isda.webp",
+      "bytes": 30904,
+      "sha256": "77c45d95329d66cf528b884477b15de77a6bf8652d669528da0439faafd3fe29",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-8aa33c28021849e0.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A05",
+      "filipino": "Manok",
+      "english": "Chicken",
+      "image": "/assets/dictionary/animals/manok.webp",
+      "bytes": 29084,
+      "sha256": "f5403bc84bec3c5ad400132072e3012b72a6f8e3cc5209ddefccfcc548296748",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-0a2716352882f509.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A06",
+      "filipino": "Baka",
+      "english": "Cow",
+      "image": "/assets/dictionary/animals/baka.webp",
+      "bytes": 29794,
+      "sha256": "cb09a4a621172e0ed9dde7dd9c03113a5ac998020b03f7a6d15a8fd0f274c898",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-3f8c49ce280206ab.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A07",
+      "filipino": "Kalabaw",
+      "english": "Carabao",
+      "image": "/assets/dictionary/animals/kalabaw.webp",
+      "bytes": 29098,
+      "sha256": "a235e769749217289d673bc4a7484c8b596825e1491a301d5129a23f189d4084",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-13b623dcc54a87a2.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A08",
+      "filipino": "Baboy",
+      "english": "Pig",
+      "image": "/assets/dictionary/animals/baboy.webp",
+      "bytes": 25928,
+      "sha256": "8794b2e4e516395080a9041d325f0bdc6336fad9c4ce7f8966772a57dd2f41b7",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-7cdd2bf8fcf351aa.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A09",
+      "filipino": "Kambing",
+      "english": "Goat",
+      "image": "/assets/dictionary/animals/kambing.webp",
+      "bytes": 26712,
+      "sha256": "040f612fe33aeda2c90bca1d7e33ef699cff8cb557feeb8016ba969f06776ea4",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-48a149afd9edfa8d.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A10",
+      "filipino": "Kabayo",
+      "english": "Horse",
+      "image": "/assets/dictionary/animals/kabayo.webp",
+      "bytes": 30198,
+      "sha256": "1483f396e149c0d60a77918f2790595d6cb7c9b574f112800bc800a9a806e193",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-4fcbff14cdda0025.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A11",
+      "filipino": "Pato",
+      "english": "Duck",
+      "image": "/assets/dictionary/animals/pato.webp",
+      "bytes": 24340,
+      "sha256": "d1510f45871ffc65c7fd933cdaf6124fe88c87ef3e5e17194efefe0a6da1876a",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-c4aa39c9c54ac903.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A12",
+      "filipino": "Palaka",
+      "english": "Frog",
+      "image": "/assets/dictionary/animals/palaka.webp",
+      "bytes": 27954,
+      "sha256": "64d1e02cb92ece6e1271d2a6bf366af63fb2d630c4b7e2320dea7366804c0b6d",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-17864a72e1a91775.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A13",
+      "filipino": "Paruparo",
+      "english": "Butterfly",
+      "image": "/assets/dictionary/animals/paruparo.webp",
+      "bytes": 36650,
+      "sha256": "b3784343b5d58dec3cf22b999b1e2091d3482829442c65935a96cc1f594677af",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-83515644d5fa5c79.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A14",
+      "filipino": "Langgam",
+      "english": "Ant",
+      "image": "/assets/dictionary/animals/langgam.webp",
+      "bytes": 28432,
+      "sha256": "9d29fb14f206387b612e05c477db9713b6bdb34dfe0ed770ec74d017b35888bf",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-04ac6bc7ca55efbb.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A15",
+      "filipino": "Bubuyog",
+      "english": "Bee",
+      "image": "/assets/dictionary/animals/bubuyog.webp",
+      "bytes": 31390,
+      "sha256": "8c2a0e1f5d07c289765ac2f4baf3819399636c7d63bda4330a81960aa37ce2ce",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-166d336bd742976d.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A16",
+      "filipino": "Lamok",
+      "english": "Mosquito",
+      "image": "/assets/dictionary/animals/lamok.webp",
+      "bytes": 30210,
+      "sha256": "6313f585252d77382c71fdb8b841bef9d3385b8cd30a2b5145ddfb08a250aaf3",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-1bfdfcc96399443a.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A17",
+      "filipino": "Pagong",
+      "english": "Turtle",
+      "image": "/assets/dictionary/animals/pagong.webp",
+      "bytes": 15574,
+      "sha256": "cc761945c9ea75e622baa271971b623404928e1ebbff0ba6011986d4ddfa6002",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-60c7465048af.wav",
+      "englishAudio": "/audio/en-ca6220c3912d.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A18",
+      "filipino": "Ahas",
+      "english": "Snake",
+      "image": "/assets/dictionary/animals/ahas.webp",
+      "bytes": 28086,
+      "sha256": "3fb255c235d7047f96e669f79730ce4e1b60699434f06a76d927ede29af57a5a",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-e3dedc654e0a197a.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A19",
+      "filipino": "Daga",
+      "english": "Rat",
+      "image": "/assets/dictionary/animals/daga.webp",
+      "bytes": 30218,
+      "sha256": "d6de84eedfd48d20dacb4d7fe03c69429d66cee0afbb33337fcdb94c691bc1ad",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-766f8b801b6fb9e7.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A20",
+      "filipino": "Kuneho",
+      "english": "Rabbit",
+      "image": "/assets/dictionary/animals/kuneho.webp",
+      "bytes": 13314,
+      "sha256": "d23c9bd6b04333d17f6fd7e0520c12a56176ebe5fa7618ca77e2d35abbade273",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-d7d60908b799.wav",
+      "englishAudio": "/audio/en-a4c3c8a03401.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A21",
+      "filipino": "Leon",
+      "english": "Lion",
+      "image": "/assets/dictionary/animals/leon.webp",
+      "bytes": 36112,
+      "sha256": "f31da634c628ba7bccef99bbf43f1df5464a3b7bf0b09132d5f8a0887a09de0e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-1534cf2af76ecd84.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A22",
+      "filipino": "Tigre",
+      "english": "Tiger",
+      "image": "/assets/dictionary/animals/tigre.webp",
+      "bytes": 37258,
+      "sha256": "c48b21c914a13a30fce810a529ecd431405d89aa550f95afa43fcac872e6e85f",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-ca9e651763255754.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A23",
+      "filipino": "Elepante",
+      "english": "Elephant",
+      "image": "/assets/dictionary/animals/elepante.webp",
+      "bytes": 29080,
+      "sha256": "6190d076f34972cac33007c02997689fcac31c5161331c54b8e1a9f8cd17fa2f",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-4738df8370eb9c1f.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A24",
+      "filipino": "Unggoy",
+      "english": "Monkey",
+      "image": "/assets/dictionary/animals/unggoy.webp",
+      "bytes": 31752,
+      "sha256": "e9150d3bebdb9c5400c85f54fc3947f9d88e15c0f879f733d3b08f6d59333d8a",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-464c1de52f4809db.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "A25",
+      "filipino": "Buwaya",
+      "english": "Crocodile",
+      "image": "/assets/dictionary/animals/buwaya.webp",
+      "bytes": 33364,
+      "sha256": "258f3a45828ae29775e73f3ae5741d3122d7dbc7c15a0c60856f0ed08b8969a5",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-43b3b69bad1abe29.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F01",
+      "filipino": "Kanin",
+      "english": "Cooked Rice",
+      "image": "/assets/dictionary/food/kanin.webp",
+      "bytes": 17112,
+      "sha256": "038ec40490e1e8ac81b9da314de92b2de858a7783b914bfb835dc0f79ad1e554",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5d1321a851d80ae9.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F02",
+      "filipino": "Tinapay",
+      "english": "Bread",
+      "image": "/assets/dictionary/food/tinapay.webp",
+      "bytes": 42578,
+      "sha256": "b06e33fa9a4b9b2f4b01a79a19682fa6cac2414aa8ea6bc4978eca0dd4e734bb",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-4e2c8ed7785086e4.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F03",
+      "filipino": "Itlog",
+      "english": "Egg",
+      "image": "/assets/dictionary/food/itlog.webp",
+      "bytes": 16856,
+      "sha256": "7c98753ae55d346bd702d48413276ee2688ed61b2b5364b2de40e51112523e81",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5d5610c30d8b8a33.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F04",
+      "filipino": "Gatas",
+      "english": "Milk",
+      "image": "/assets/dictionary/food/gatas.webp",
+      "bytes": 14452,
+      "sha256": "2528588a751e27b5826abb32743a44bc02632cf268ae56b4cec5510924039910",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-199ae42a13c206d3.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F05",
+      "filipino": "Tubig",
+      "english": "Water",
+      "image": "/assets/dictionary/food/tubig.webp",
+      "bytes": 19692,
+      "sha256": "dd851f144436eb902f9a998ec16764404e18fba152e4f3e4c15b3590d36f7475",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-6181ccb0a01b5b14.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F06",
+      "filipino": "Saging",
+      "english": "Banana",
+      "image": "/assets/dictionary/food/saging.webp",
+      "bytes": 14476,
+      "sha256": "c783f037949ed81cf811767847c4728eaca18e6f0e76b41d6dcb30c9d04027bc",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-0aa0b1270f0e.wav",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F07",
+      "filipino": "Mangga",
+      "english": "Mango",
+      "image": "/assets/dictionary/food/mangga.webp",
+      "bytes": 23868,
+      "sha256": "c4a4c1bd82b70c963839eafb6616941768e2be8f35054eb1225c731bfad3c519",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-1dfb894f53880156.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F08",
+      "filipino": "Mansanas",
+      "english": "Apple",
+      "image": "/assets/dictionary/food/mansanas.webp",
+      "bytes": 8434,
+      "sha256": "8ef6b33e8669f9ab70461216cbd3a94da3210c78eabbc35e57bee27eaad291af",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-802f3ae616ac.wav",
+      "englishAudio": "/audio/en-0dd1d894095f.wav",
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F09",
+      "filipino": "Pakwan",
+      "english": "Watermelon",
+      "image": "/assets/dictionary/food/pakwan.webp",
+      "bytes": 32076,
+      "sha256": "4ffa211dee5276d3cff95d997576042777ae64e6117b51b81d308c54b12ce1f5",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-e1d24b2c379f2843.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F10",
+      "filipino": "Pinya",
+      "english": "Pineapple",
+      "image": "/assets/dictionary/food/pinya.webp",
+      "bytes": 27352,
+      "sha256": "766d7e3174acdd6ec005831ee0a3ea940b037e7377360538f29224ab44e8f863",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-52346ee4321073cf.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F11",
+      "filipino": "Papaya",
+      "english": "Papaya",
+      "image": "/assets/dictionary/food/papaya.webp",
+      "bytes": 34318,
+      "sha256": "afcbee584144f2517f054cd97592ee5c8eb9d68fbbda145c6ee9e804ebd0fc02",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-98a4f7655958a385.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F12",
+      "filipino": "Ubas",
+      "english": "Grapes",
+      "image": "/assets/dictionary/food/ubas.webp",
+      "bytes": 25372,
+      "sha256": "fbac1316929a12425da55550b018baf6b4e70843a31c83b524c7a0a5bf52574c",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-80be6d0e021c1c62.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F13",
+      "filipino": "Bayabas",
+      "english": "Guava",
+      "image": "/assets/dictionary/food/bayabas.webp",
+      "bytes": 27200,
+      "sha256": "f065073db8919782228eeeb411d9c5955ebf1b0daf4424e468a81b660bcc2c69",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-c9805daa9fe30d93.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F14",
+      "filipino": "Niyog",
+      "english": "Coconut",
+      "image": "/assets/dictionary/food/niyog.webp",
+      "bytes": 33386,
+      "sha256": "e0f6594195570dd3dab05165b703877a9a2938ccd7019bd9775c33a75aa230a3",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5089deb85e355fc3.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F15",
+      "filipino": "Mais",
+      "english": "Corn",
+      "image": "/assets/dictionary/food/mais.webp",
+      "bytes": 26952,
+      "sha256": "e56d6027e09af7933a410c9f88f62a9f8b35257e401459d28d962eca5767be9e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-ad6276b240df42d4.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F16",
+      "filipino": "Karot",
+      "english": "Carrot",
+      "image": "/assets/dictionary/food/karot.webp",
+      "bytes": 17030,
+      "sha256": "7e4604842744496754841a2c243c9a8913ee6e55a0563e90cde70a5b0d319f80",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-b010583c197d12d1.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F17",
+      "filipino": "Kamatis",
+      "english": "Tomato",
+      "image": "/assets/dictionary/food/kamatis.webp",
+      "bytes": 21026,
+      "sha256": "89a0c5e51456097aa44e019c6f03c48fb683ededb032ce0356e6ede14735200b",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-65d182bcf240c6cc.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F18",
+      "filipino": "Talong",
+      "english": "Eggplant",
+      "image": "/assets/dictionary/food/talong.webp",
+      "bytes": 17896,
+      "sha256": "b74c3ec14a2586c96f97c0c9ee75e8669ebf9c31ab3db0f69d3c696ee328e22e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-544dd40dcd799f08.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F19",
+      "filipino": "Patatas",
+      "english": "Potato",
+      "image": "/assets/dictionary/food/patatas.webp",
+      "bytes": 19044,
+      "sha256": "179a04a9d9230d40f1f2ab9e23883f109d8ee23c1b335b9e43edcd5cf7cb75b8",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-cf7e8e6bb7b9c6d2.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F20",
+      "filipino": "Repolyo",
+      "english": "Cabbage",
+      "image": "/assets/dictionary/food/repolyo.webp",
+      "bytes": 29362,
+      "sha256": "95db473ea6159d406912edf4670c3c37deec91e58676da0aba37c60a4041dabe",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-354cdce43ed72789.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F21",
+      "filipino": "Keso",
+      "english": "Cheese",
+      "image": "/assets/dictionary/food/keso.webp",
+      "bytes": 13392,
+      "sha256": "89d7f0db09bcf095ae1365473e48f886f748447c9735d4415222f909130b0817",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5e1457ccda4c9351.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F22",
+      "filipino": "Asukal",
+      "english": "Sugar",
+      "image": "/assets/dictionary/food/asukal.webp",
+      "bytes": 20996,
+      "sha256": "f03c6f059f574e8182ca67bc742010b977573951c6efb7af5a5a2e98dd61ba16",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-63edeb7fd5962f07.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F23",
+      "filipino": "Asin",
+      "english": "Salt",
+      "image": "/assets/dictionary/food/asin.webp",
+      "bytes": 19014,
+      "sha256": "7e95db8344d03f3fc0f5fe90b96827712d1c244b850eaa099aa98d2dd601611d",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-4b976f8aa5c2cf18.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F24",
+      "filipino": "Sabaw",
+      "english": "Soup",
+      "image": "/assets/dictionary/food/sabaw.webp",
+      "bytes": 25992,
+      "sha256": "75c8149cdee6b911cc42647d73da90855182b1b81879de5e9a188a9ab2058556",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-e0bc55ba9910d1b3.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "F25",
+      "filipino": "Sorbetes",
+      "english": "Ice Cream",
+      "image": "/assets/dictionary/food/sorbetes.webp",
+      "bytes": 19966,
+      "sha256": "7df4cc939a790cd8a115764d769e9f28fb4940f8c2488e5886d1e259b2be459c",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-dfc59b7051a352b8.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T01",
+      "filipino": "Lapis",
+      "english": "Pencil",
+      "image": "/assets/dictionary/things/lapis.webp",
+      "bytes": 3222,
+      "sha256": "2b868f9ae4e737ebc16c2f1c8cca447394f44169972f6d30bdf7dc910ca9bad3",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-03e4f7cf9317923e.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T02",
+      "filipino": "Aklat",
+      "english": "Book",
+      "image": "/assets/dictionary/things/aklat.webp",
+      "bytes": 10846,
+      "sha256": "816fc417224af35b3022827b347caf1089002d985627f1bf2154b3637d5b95c1",
+      "source": "Reused existing BasaBuddy artwork; original kept unchanged",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-95a0bc0a74e5d3a0.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T03",
+      "filipino": "Papel",
+      "english": "Paper",
+      "image": "/assets/dictionary/things/papel.webp",
+      "bytes": 6474,
+      "sha256": "a6c2ec8fc60efbd2e40bfc8122abd5d79ab5ee2cadf96ae240f79ca8c6b0dda0",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-abd0f5b700fc5b56.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T04",
+      "filipino": "Gunting",
+      "english": "Scissors",
+      "image": "/assets/dictionary/things/gunting.webp",
+      "bytes": 20996,
+      "sha256": "86615105b20fb11d037eb71c74ce840509fec24d62f0e64cb4ea6333456cc3f0",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-29190cd7afed83aa.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T05",
+      "filipino": "Pandikit",
+      "english": "Glue",
+      "image": "/assets/dictionary/things/pandikit.webp",
+      "bytes": 10000,
+      "sha256": "beab45c40af517ef8deac772876317628882755e39a47033dd302c31b097315b",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5abf781f58f98de7.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T06",
+      "filipino": "Pambura",
+      "english": "Eraser",
+      "image": "/assets/dictionary/things/pambura.webp",
+      "bytes": 11054,
+      "sha256": "ce96fc2eeb4a2a911aa8a96efcb3ea3d8b605e5cccddf06159c28946af5d1ddb",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-7e3af96896ef6600.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T07",
+      "filipino": "Bag",
+      "english": "Bag",
+      "image": "/assets/dictionary/things/bag.webp",
+      "bytes": 32262,
+      "sha256": "d951f3613debc2094ce748140d34431c6c97843e21b89c7c0ef31ee1724e0eb4",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-c018019b6a8b01ab.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T08",
+      "filipino": "Mesa",
+      "english": "Table",
+      "image": "/assets/dictionary/things/mesa.webp",
+      "bytes": 18674,
+      "sha256": "57192e3d3c8a80a367335d0e99a6d4ed58e70d75ca0d78bac9fad40800d06706",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-73e29454bd930074.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T09",
+      "filipino": "Upuan",
+      "english": "Chair",
+      "image": "/assets/dictionary/things/upuan.webp",
+      "bytes": 22210,
+      "sha256": "92a0061bc786486b20bacab54cba5fa320aef84d9d7d733a883e81b15fedff0e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-9ca46a3f7300b644.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T10",
+      "filipino": "Pinto",
+      "english": "Door",
+      "image": "/assets/dictionary/things/pinto.webp",
+      "bytes": 18620,
+      "sha256": "b2e5fd83c338794641e644f647300d87ab277d2e5c98c9e0ba74fb4a8bb98179",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-a4b785c6d774e9f9.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T11",
+      "filipino": "Bintana",
+      "english": "Window",
+      "image": "/assets/dictionary/things/bintana.webp",
+      "bytes": 17610,
+      "sha256": "7016b6062060fe769f3027474d8a374a5e60795e130826fb429bf99f869fef19",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-909b145de1032de1.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T12",
+      "filipino": "Orasan",
+      "english": "Clock",
+      "image": "/assets/dictionary/things/orasan.webp",
+      "bytes": 27638,
+      "sha256": "d7de7701745e1126694756388e38a12ee9077e66b59714ebdd0c32cf9ed888cf",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-095141c714f45fea.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T13",
+      "filipino": "Sapatos",
+      "english": "Shoes",
+      "image": "/assets/dictionary/things/sapatos.webp",
+      "bytes": 34546,
+      "sha256": "d33d953417cbab3158d8cc19b68fedf8a81fcdbb2b5c9e6b661ff435ee76c491",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-1bcd9699bd53.wav",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T14",
+      "filipino": "Payong",
+      "english": "Umbrella",
+      "image": "/assets/dictionary/things/payong.webp",
+      "bytes": 21142,
+      "sha256": "f92a72bfef2d6fdcec9af516f571e2975a6b2dfffa5d8e48fa23f90d1996c8ae",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-8a694a8606bf79f6.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T15",
+      "filipino": "Laruan",
+      "english": "Toy",
+      "image": "/assets/dictionary/things/laruan.webp",
+      "bytes": 30880,
+      "sha256": "8aad2933f3857e5ebcec038734461b9be4a5fcc61d0d0f95d588007f39511aa8",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5e387365cd378b1a.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T16",
+      "filipino": "Bola",
+      "english": "Ball",
+      "image": "/assets/dictionary/things/bola.webp",
+      "bytes": 20704,
+      "sha256": "47754d641fd9819b94512ea739262bc39202c0e5689ba5b1418201b755fa47de",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-87d909e4d7df.wav",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T17",
+      "filipino": "Manika",
+      "english": "Doll",
+      "image": "/assets/dictionary/things/manika.webp",
+      "bytes": 39084,
+      "sha256": "074d935c8e74b5611b75623015cedd7926ac4b94c4a9b21505a30bce527bdcea",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-938320c64bcbb0d4.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T18",
+      "filipino": "Kama",
+      "english": "Bed",
+      "image": "/assets/dictionary/things/kama.webp",
+      "bytes": 21360,
+      "sha256": "659f9a1696c0fd29e1b2b86ec0200a7c1729f0662e37e36608553b0f4388c1b2",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-29d06a216a618ec4.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T19",
+      "filipino": "Unan",
+      "english": "Pillow",
+      "image": "/assets/dictionary/things/unan.webp",
+      "bytes": 15712,
+      "sha256": "ea2866614cc2977b0c2104dbb7ae497478968b011a7505181cf4456048433063",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-6b9bad76181d63da.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T20",
+      "filipino": "Kumot",
+      "english": "Blanket",
+      "image": "/assets/dictionary/things/kumot.webp",
+      "bytes": 29962,
+      "sha256": "c047ec643fbcc5eaa275c127a08a0d3a1167307b5b34b73f52ab0ea6056de299",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-40ce5a2ecaf892be.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T21",
+      "filipino": "Baso",
+      "english": "Glass",
+      "image": "/assets/dictionary/things/baso.webp",
+      "bytes": 19604,
+      "sha256": "452bcb733a0618b578a80ee8b32c3c8470488846bf43913d587caa645aa5c6f4",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-6ed72815e65b51b6.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T22",
+      "filipino": "Plato",
+      "english": "Plate",
+      "image": "/assets/dictionary/things/plato.webp",
+      "bytes": 9068,
+      "sha256": "c80b80f3b2a7c0a09d457a051a652ba68d06725ea28689892ac7364972cc9d2f",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-87e4571bc7b47363.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T23",
+      "filipino": "Kutsara",
+      "english": "Spoon",
+      "image": "/assets/dictionary/things/kutsara.webp",
+      "bytes": 12700,
+      "sha256": "71cbc59403175127bf47114c0696ba253e3c83959348df47247a40572a830d87",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-968a8868598949be.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T24",
+      "filipino": "Tinidor",
+      "english": "Fork",
+      "image": "/assets/dictionary/things/tinidor.webp",
+      "bytes": 13552,
+      "sha256": "1f43de44a3cd79c027c8dab2068c92eb2895822502f409be3048e25b0488a6fc",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-0c3ba0f43128ea3e.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T25",
+      "filipino": "Salamin",
+      "english": "Mirror",
+      "image": "/assets/dictionary/things/salamin.webp",
+      "bytes": 16228,
+      "sha256": "99a2ee08ed4dcb1ce6807edf9fdb57659b3e0264e65e8598f969b63264451370",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-035007f03d5a3054.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T26",
+      "filipino": "Suklay",
+      "english": "Comb",
+      "image": "/assets/dictionary/things/suklay.webp",
+      "bytes": 21976,
+      "sha256": "22d08b4892676c2eb3f940ae1e01b2274099a699ee9de667229a398a6c82b5b6",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-a0e1b451723e30a8.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T27",
+      "filipino": "Sipilyo",
+      "english": "Toothbrush",
+      "image": "/assets/dictionary/things/sipilyo.webp",
+      "bytes": 18058,
+      "sha256": "cbb4163a07212e4e05a36d88295d40acd29d016f858fbc0a29c6b9c9a7cdbd4e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-78335fce88b18e48.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T28",
+      "filipino": "Sabon",
+      "english": "Soap",
+      "image": "/assets/dictionary/things/sabon.webp",
+      "bytes": 13712,
+      "sha256": "a7bc78329629632ecc3c3089d35a2f18fef62729b2cf77acf25688ff526b4285",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-3f875dc5ab67a79b.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T29",
+      "filipino": "Damit",
+      "english": "Clothes",
+      "image": "/assets/dictionary/things/damit.webp",
+      "bytes": 19174,
+      "sha256": "a10e5c23755f7e9e01238832960715051769bde79f83dc9b290f3a526069c485",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-e9858a5a7dde8deb.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T30",
+      "filipino": "Telepono",
+      "english": "Telephone",
+      "image": "/assets/dictionary/things/telepono.webp",
+      "bytes": 30110,
+      "sha256": "bd82d073f7dfc473a4317f327a6c701da16f6e1b0486bb2997483fb61cb0797a",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-7a8cebc8b4fe6247.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T31",
+      "filipino": "Susi",
+      "english": "Key",
+      "image": "/assets/dictionary/things/susi.webp",
+      "bytes": 18016,
+      "sha256": "c9358ba5eabaa137b3bb27ba8081a369f8c76f10c8235fb31c13493338c5ea23",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-b77cee999c72f1af.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T32",
+      "filipino": "Ilaw",
+      "english": "Light",
+      "image": "/assets/dictionary/things/ilaw.webp",
+      "bytes": 19514,
+      "sha256": "7ffd56c1502c1fc0fe0b0bc157f8868e38dc778c80666b9e67f541a83067faad",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-49854b344ed3d6b8.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T33",
+      "filipino": "Walis",
+      "english": "Broom",
+      "image": "/assets/dictionary/things/walis.webp",
+      "bytes": 24636,
+      "sha256": "7daf103fe7f097a08166c3d12d48b1f2b87b97de447144254dee89bd819d688b",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-5f236c3e3c00987d.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T34",
+      "filipino": "Timba",
+      "english": "Bucket",
+      "image": "/assets/dictionary/things/timba.webp",
+      "bytes": 22092,
+      "sha256": "0b36412b3b4b16812da120eec5b04dab0a4662fec6251210e5233e60a9a5a369",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-c76a2c585134e002.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T35",
+      "filipino": "Bisikleta",
+      "english": "Bicycle",
+      "image": "/assets/dictionary/things/bisikleta.webp",
+      "bytes": 38992,
+      "sha256": "8c1d69d6ac8a94f7959186ced58a59c598f4dee2ac42da2f875aed257bd3397d",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-38d7c57df685809f.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T36",
+      "filipino": "Kotse",
+      "english": "Car",
+      "image": "/assets/dictionary/things/kotse.webp",
+      "bytes": 32110,
+      "sha256": "52e55fb18e943d376465260afb73544ae4f08d87dbe5b0e6854914452a5a395f",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-97f3ad3598678dbb.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T37",
+      "filipino": "Bangka",
+      "english": "Boat",
+      "image": "/assets/dictionary/things/bangka.webp",
+      "bytes": 33850,
+      "sha256": "8f9b0f3e4c35f5a11f8a01ee78faeb2fe7209453e37fc91ab80a0109c4e7fd70",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-d4d3b6bf285d9f79.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T38",
+      "filipino": "Lobo",
+      "english": "Balloon",
+      "image": "/assets/dictionary/things/lobo.webp",
+      "bytes": 12056,
+      "sha256": "9ffdbc48ba4a64fbd165e0b8580dfcd80efcc30e05893a5f77592c22b7326812",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-3e30da3972953c02.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T39",
+      "filipino": "Krayola",
+      "english": "Crayon",
+      "image": "/assets/dictionary/things/krayola.webp",
+      "bytes": 11948,
+      "sha256": "ab001bdb666a48a0190be79d31b399df3985d73c6a8b793e941227843b70512e",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-61e853e0f9d18e63.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    },
+    {
+      "id": "T40",
+      "filipino": "Pisara",
+      "english": "Blackboard",
+      "image": "/assets/dictionary/things/pisara.webp",
+      "bytes": 13108,
+      "sha256": "15f5ad15fe404a19b5e07f5caaa066361bdfb51a11e61c9598fa9518ee70d928",
+      "source": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+      "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending",
+      "filipinoAudio": "/audio/fil-1398c04e1ef2e699.mp3",
+      "englishAudio": null,
+      "filipinoVoiceFallback": "fil-PH or local tl voice only",
+      "englishVoiceFallback": "en-US or local en voice only"
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "logos/wordmark": {
+    "src": "/assets/logos/wordmark.webp",
+    "width": 840,
+    "height": 282,
+    "source": "asset-edits/wordmark-simple.png",
+    "edit": "User-requested removal of top decorations",
+    "bytes": 160752,
+    "variants": [
+      {
+        "src": "/assets/logos/wordmark-280.webp",
+        "width": 280,
+        "height": 94,
+        "bytes": 23670,
+        "revision": "bfe4ed0fd90a963d"
+      },
+      {
+        "src": "/assets/logos/wordmark-560.webp",
+        "width": 560,
+        "height": 188,
+        "bytes": 78260,
+        "revision": "cd83c16cc745e4a3"
+      },
+      {
+        "src": "/assets/logos/wordmark.webp",
+        "width": 840,
+        "height": 282,
+        "bytes": 160752,
+        "revision": "7b90030d319c9fd6"
+      }
+    ],
+    "revision": "7b90030d319c9fd6"
+  },
+  "mascots/reading": {
+    "src": "/assets/mascots/reading.webp",
+    "width": 331,
+    "height": 318,
+    "source": "characters.png",
+    "crop": [
+      612,
+      3,
+      943,
+      321
+    ],
+    "bytes": 103380,
+    "revision": "7250d77621a1e5fb"
+  },
+  "mascots/encouraging": {
+    "src": "/assets/mascots/encouraging.webp",
+    "width": 308,
+    "height": 307,
+    "source": "characters.png",
+    "crop": [
+      954,
+      15,
+      1262,
+      322
+    ],
+    "bytes": 87058,
+    "revision": "95519e9e2417dc4b"
+  },
+  "logos/app-icon": {
+    "src": "/assets/logos/app-icon.webp",
+    "width": 315,
+    "height": 297,
+    "source": "characters.png",
+    "crop": [
+      1280,
+      24,
+      1595,
+      321
+    ],
+    "bytes": 83272,
+    "revision": "0556a339bfc4b0d8"
+  },
+  "characters/student": {
+    "src": "/assets/characters/student.webp",
+    "width": 1214,
+    "height": 1296,
+    "source": "reference/asset-edits/approved-current/characters/student.webp",
+    "crop": [
+      43,
+      320,
+      310,
+      605
+    ],
+    "bytes": 1053180,
+    "status": "Earlier user-requested imagegen edit; current design preserved, not recovered original detail",
+    "revision": "7d245837966589bd"
+  },
+  "characters/reader": {
+    "src": "/assets/characters/reader.webp",
+    "width": 273,
+    "height": 284,
+    "source": "characters.png",
+    "crop": [
+      311,
+      322,
+      584,
+      606
+    ],
+    "bytes": 87974,
+    "revision": "98dfceb180364446"
+  },
+  "characters/reader-glasses": {
+    "src": "/assets/characters/reader-glasses.webp",
+    "width": 244,
+    "height": 278,
+    "source": "characters.png",
+    "crop": [
+      585,
+      327,
+      829,
+      605
+    ],
+    "bytes": 81256,
+    "revision": "c45a4cc71e2aa16a"
+  },
+  "characters/schoolboy": {
+    "src": "/assets/characters/schoolboy.webp",
+    "width": 219,
+    "height": 283,
+    "source": "characters.png",
+    "crop": [
+      834,
+      322,
+      1053,
+      605
+    ],
+    "bytes": 67090,
+    "revision": "17bcbc44f85a2798"
+  },
+  "characters/schoolgirl": {
+    "src": "/assets/characters/schoolgirl.webp",
+    "width": 248,
+    "height": 277,
+    "source": "characters.png",
+    "crop": [
+      1056,
+      328,
+      1304,
+      605
+    ],
+    "bytes": 79022,
+    "revision": "ebd33ca9949648e3"
+  },
+  "objects/open-book": {
+    "src": "/assets/objects/open-book.webp",
+    "width": 304,
+    "height": 177,
+    "source": "characters.png",
+    "crop": [
+      318,
+      620,
+      622,
+      797
+    ],
+    "bytes": 54738,
+    "revision": "9485d8e97bf1bbc7"
+  },
+  "objects/pencil": {
+    "src": "/assets/objects/pencil.webp",
+    "width": 113,
+    "height": 181,
+    "source": "characters.png",
+    "crop": [
+      624,
+      615,
+      737,
+      796
+    ],
+    "bytes": 18168,
+    "revision": "315239d0332a50d7"
+  },
+  "objects/blocks": {
+    "src": "/assets/objects/blocks.webp",
+    "width": 240,
+    "height": 191,
+    "source": "characters.png",
+    "crop": [
+      736,
+      607,
+      976,
+      798
+    ],
+    "bytes": 40380,
+    "revision": "71e34360ee066d68"
+  },
+  "icons/star": {
+    "src": "/assets/icons/star.webp",
+    "width": 153,
+    "height": 140,
+    "source": "characters.png",
+    "crop": [
+      30,
+      800,
+      183,
+      940
+    ],
+    "bytes": 17210,
+    "revision": "03f3cc971aea11e7"
+  },
+  "icons/medal": {
+    "src": "/assets/icons/medal.webp",
+    "width": 124,
+    "height": 140,
+    "source": "characters.png",
+    "crop": [
+      193,
+      800,
+      317,
+      940
+    ],
+    "bytes": 19234,
+    "revision": "a6224fade2cc8e54"
+  },
+  "icons/trophy": {
+    "src": "/assets/icons/trophy.webp",
+    "width": 159,
+    "height": 140,
+    "source": "characters.png",
+    "crop": [
+      331,
+      800,
+      490,
+      940
+    ],
+    "bytes": 22104,
+    "revision": "7aee12bd05d2814b"
+  },
+  "icons/crown": {
+    "src": "/assets/icons/crown.webp",
+    "width": 163,
+    "height": 140,
+    "source": "characters.png",
+    "crop": [
+      499,
+      800,
+      662,
+      940
+    ],
+    "bytes": 22982,
+    "revision": "afb43f39de253910"
+  },
+  "icons/target": {
+    "src": "/assets/icons/target.webp",
+    "width": 166,
+    "height": 140,
+    "source": "characters.png",
+    "crop": [
+      668,
+      800,
+      834,
+      940
+    ],
+    "bytes": 24698,
+    "revision": "1023074ea337695d"
+  },
+  "icons/speaker": {
+    "src": "/assets/icons/speaker.webp",
+    "width": 143,
+    "height": 135,
+    "source": "characters.png",
+    "crop": [
+      839,
+      805,
+      982,
+      940
+    ],
+    "bytes": 13600,
+    "revision": "9c1eefeed74d3205"
+  },
+  "icons/microphone": {
+    "src": "/assets/icons/microphone.webp",
+    "width": 115,
+    "height": 133,
+    "source": "characters.png",
+    "crop": [
+      994,
+      807,
+      1109,
+      940
+    ],
+    "bytes": 12598,
+    "revision": "2aab0a72354164c9"
+  },
+  "mascots/reading-full": {
+    "src": "/assets/mascots/reading-full.webp",
+    "width": 349,
+    "height": 390,
+    "source": "mascots.png",
+    "crop": [
+      34,
+      505,
+      383,
+      895
+    ],
+    "bytes": 128732,
+    "revision": "e938a319a87d23e1"
+  },
+  "mascots/thumbs-up": {
+    "src": "/assets/mascots/thumbs-up.webp",
+    "width": 319,
+    "height": 385,
+    "source": "mascots.png",
+    "crop": [
+      388,
+      510,
+      707,
+      895
+    ],
+    "bytes": 112324,
+    "revision": "cf4f4a003d722a53"
+  },
+  "mascots/celebrating": {
+    "src": "/assets/mascots/celebrating.webp",
+    "width": 390,
+    "height": 385,
+    "source": "mascots.png",
+    "crop": [
+      714,
+      508,
+      1104,
+      893
+    ],
+    "bytes": 127046,
+    "revision": "2983fd13f369c91b"
+  },
+  "objects/apple": {
+    "src": "/assets/objects/apple.webp",
+    "width": 223,
+    "height": 247,
+    "source": "mascots.png",
+    "crop": [
+      589,
+      895,
+      812,
+      1142
+    ],
+    "bytes": 55832,
+    "revision": "bc84fac30e35886b"
+  },
+  "mascots/backpack": {
+    "src": "/assets/mascots/backpack.webp",
+    "width": 329,
+    "height": 445,
+    "source": "learning.png",
+    "crop": [
+      5,
+      5,
+      334,
+      450
+    ],
+    "bytes": 155634,
+    "revision": "ffb987604c803b95"
+  },
+  "icons/listen": {
+    "src": "/assets/icons/listen.webp",
+    "width": 121,
+    "height": 100,
+    "source": "learning.png",
+    "crop": [
+      39,
+      904,
+      160,
+      1004
+    ],
+    "bytes": 13488,
+    "revision": "a63cf34c5246b577"
+  },
+  "icons/puzzle": {
+    "src": "/assets/icons/puzzle.webp",
+    "width": 114,
+    "height": 100,
+    "source": "learning.png",
+    "crop": [
+      215,
+      904,
+      329,
+      1004
+    ],
+    "bytes": 11914,
+    "revision": "207250a9ddf3f3c9"
+  },
+  "icons/read": {
+    "src": "/assets/icons/read.webp",
+    "width": 124,
+    "height": 96,
+    "source": "learning.png",
+    "crop": [
+      377,
+      909,
+      501,
+      1005
+    ],
+    "bytes": 12598,
+    "revision": "b2dcf16241eadc12"
+  },
+  "icons/dictionary": {
+    "src": "/assets/icons/dictionary.webp",
+    "width": 122,
+    "height": 97,
+    "source": "learning.png",
+    "crop": [
+      561,
+      908,
+      683,
+      1005
+    ],
+    "bytes": 12654,
+    "revision": "c9044d538c6819eb"
+  },
+  "icons/games": {
+    "src": "/assets/icons/games.webp",
+    "width": 127,
+    "height": 91,
+    "source": "learning.png",
+    "crop": [
+      724,
+      913,
+      851,
+      1004
+    ],
+    "bytes": 13222,
+    "revision": "79a5ed293f6e5ea4"
+  },
+  "backgrounds/classroom": {
+    "src": "/assets/backgrounds/classroom.webp",
+    "width": 530,
+    "height": 258,
+    "source": "features.png",
+    "crop": [
+      30,
+      365,
+      560,
+      623
+    ],
+    "bytes": 167336,
+    "revision": "d71d836cbcc62c89"
+  },
+  "backgrounds/meadow": {
+    "src": "/assets/backgrounds/meadow.webp",
+    "width": 489,
+    "height": 258,
+    "source": "features.png",
+    "crop": [
+      568,
+      365,
+      1057,
+      623
+    ],
+    "bytes": 149814,
+    "revision": "0c3a192ab1036d9b"
+  },
+  "backgrounds/sky": {
+    "src": "/assets/backgrounds/sky.webp",
+    "width": 485,
+    "height": 258,
+    "source": "features.png",
+    "crop": [
+      1064,
+      365,
+      1549,
+      623
+    ],
+    "bytes": 77134,
+    "revision": "f78890cd14afa95f"
+  },
+  "backgrounds/park": {
+    "src": "/assets/backgrounds/park.webp",
+    "width": 664,
+    "height": 425,
+    "source": "backgrounds.png",
+    "crop": [
+      26,
+      153,
+      690,
+      578
+    ],
+    "bytes": 288494,
+    "revision": "03635c23b2456e08"
+  },
+  "backgrounds/school": {
+    "src": "/assets/backgrounds/school.webp",
+    "width": 676,
+    "height": 425,
+    "source": "backgrounds.png",
+    "crop": [
+      740,
+      153,
+      1416,
+      578
+    ],
+    "bytes": 286148,
+    "revision": "f25ee1d53a9b0d6f"
+  },
+  "objects/cloud": {
+    "src": "/assets/objects/cloud.webp",
+    "width": 2048,
+    "height": 1151,
+    "bytes": 283036,
+    "source": "reference/asset-edits/enhanced-batches/objects/cloud.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "0515825c02d5bfcf"
+  },
+  "cat": {
+    "src": "/assets/illustrations/cat.webp",
+    "width": 311,
+    "height": 363,
+    "source": "legacy original",
+    "status": "Higher-quality matching original needed",
+    "bytes": 11884,
+    "revision": "95dc3b8c1fc4b146"
+  },
+  "dog": {
+    "src": "/assets/illustrations/dog.webp",
+    "width": 2048,
+    "height": 1969,
+    "bytes": 1031250,
+    "source": "reference/asset-edits/enhanced-batches/illustrations/dog.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "c1cef4fed1752b08"
+  },
+  "bird": {
+    "src": "/assets/illustrations/bird.webp",
+    "width": 1376,
+    "height": 1143,
+    "bytes": 1086188,
+    "source": "reference/asset-edits/approved-current/illustrations/bird.webp",
+    "status": "Earlier user-requested imagegen edit; current design preserved, not recovered original detail",
+    "revision": "40fbc884cb99d3b8"
+  },
+  "rabbit": {
+    "src": "/assets/illustrations/rabbit.webp",
+    "width": 1388,
+    "height": 1133,
+    "bytes": 778772,
+    "source": "reference/asset-edits/approved-current/illustrations/rabbit.webp",
+    "status": "Earlier user-requested imagegen edit; current design preserved, not recovered original detail",
+    "revision": "f4cc19bf70a1dca2"
+  },
+  "turtle": {
+    "src": "/assets/illustrations/turtle.webp",
+    "width": 1372,
+    "height": 1146,
+    "bytes": 969068,
+    "source": "reference/asset-edits/approved-current/illustrations/turtle.webp",
+    "status": "Earlier user-requested imagegen edit; current design preserved, not recovered original detail",
+    "revision": "a6c104ceb35ace89"
+  },
+  "penguin": {
+    "src": "/assets/illustrations/penguin.webp",
+    "width": 1403,
+    "height": 1121,
+    "bytes": 959012,
+    "source": "reference/asset-edits/approved-current/illustrations/penguin.webp",
+    "status": "Earlier user-requested imagegen edit; current design preserved, not recovered original detail",
+    "revision": "196b354e4b26c2dc"
+  },
+  "teacher": {
+    "src": "/assets/characters/teacher.webp",
+    "width": 244,
+    "height": 278,
+    "source": "characters.png",
+    "crop": [
+      585,
+      327,
+      829,
+      605
+    ],
+    "bytes": 81256,
+    "replaces": "pixelated legacy crop",
+    "revision": "c45a4cc71e2aa16a"
+  },
+  "story": {
+    "src": "/assets/illustrations/story.webp",
+    "width": 1536,
+    "height": 1024,
+    "source": "Existing workspace story illustration; upstream provenance not recorded",
+    "edit": "Preserved current artwork; synchronized intrinsic dimensions and content revision in Phase 2",
+    "bytes": 1597877,
+    "revision": "36afc49198d2d17b"
+  },
+  "sentence": {
+    "src": "/assets/illustrations/sentence.webp",
+    "width": 1988,
+    "height": 1988,
+    "bytes": 1148116,
+    "source": "reference/asset-edits/enhanced-batches/illustrations/sentence.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "01e9f09c0a6b5ac7"
+  },
+  "puzzle": {
+    "src": "/assets/illustrations/puzzle.webp",
+    "width": 2011,
+    "height": 2048,
+    "bytes": 1055150,
+    "source": "reference/asset-edits/enhanced-batches/illustrations/puzzle.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "b8dfa671086d29a3"
+  },
+  "celebrate": {
+    "src": "/assets/illustrations/celebrate.webp",
+    "width": 2560,
+    "height": 1308,
+    "bytes": 1095172,
+    "source": "reference/asset-edits/enhanced-batches/illustrations/celebrate.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "ddd2c1546fa4c782"
+  },
+  "mascots/welcome-original": {
+    "src": "/assets/mascots/welcome-original.webp",
+    "width": 2048,
+    "height": 1902,
+    "bytes": 1293980,
+    "source": "reference/asset-edits/enhanced-batches/mascots/welcome-original.webp",
+    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
+    "revision": "a0db4ca118900d03"
+  }
+}

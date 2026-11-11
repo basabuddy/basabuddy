@@ -1,0 +1,12 @@
+{
+  "id": "A02",
+  "image": "/assets/dictionary/animals/pusa.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/illustrations/cat.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 311,
+  "height": 363,
+  "sha256": "ffce2bc0b1844f19b6f7ef1648d95fbb7065fdfe16186b157ee1ba1d22e888aa",
+  "bytes": 13978,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

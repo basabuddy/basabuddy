@@ -1,0 +1,12 @@
+{
+  "id": "A03",
+  "image": "/assets/dictionary/animals/ibon.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/illustrations/bird.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 640,
+  "height": 532,
+  "sha256": "8987e6ef51f65eff209bd4de537c47cd3fa6b0b468ca1c3c48ed6033213f2930",
+  "bytes": 19562,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

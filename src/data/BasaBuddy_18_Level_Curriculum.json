@@ -1,0 +1,498 @@
+{
+  "version": "1.0",
+  "audience": "Grades 1–3, reading ability not fixed by grade",
+  "lang_codes": [
+    "fil",
+    "en"
+  ],
+  "levels": [
+    {
+      "id": "L01",
+      "order": 1,
+      "title": "Listening detective",
+      "stage": "Foundations",
+      "objective": "Identify speech sounds and respond to short oral directions",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Pakinggan ang /ma/ at /pa/; piliin ang tunog"
+        },
+        "en": {
+          "sample_prompts": "Hear /m/ vs /s/ and choose the sound"
+        }
+      },
+      "suggested_activities": [
+        "Listen-and-tap",
+        "visual choice"
+      ],
+      "formative_check": "5 listening choices",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": null,
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L02",
+      "order": 2,
+      "title": "Rhymes & syllable beats",
+      "stage": "Foundations",
+      "objective": "Recognize rhyme and tap word syllables",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Palakpak sa ba-ta (2) at ma-sa-ya (3)"
+        },
+        "en": {
+          "sample_prompts": "Match cat/hat rhyme and clap ap-ple (2)"
+        }
+      },
+      "suggested_activities": [
+        "Listen, clap, tap"
+      ],
+      "formative_check": "5 oral patterns",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L01",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L03",
+      "order": 3,
+      "title": "Letters and their sounds",
+      "stage": "Foundations",
+      "objective": "Recognize a small taught set of grapheme-sound pairs",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "a, e, i, o, u; m, b, p with recorded models"
+        },
+        "en": {
+          "sample_prompts": "m, s, t, a, p with English sound models"
+        }
+      },
+      "suggested_activities": [
+        "Audio cards",
+        "letter-match"
+      ],
+      "formative_check": "5 letter/sound choices",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L02",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L04",
+      "order": 4,
+      "title": "Beginning and ending sounds",
+      "stage": "Foundations",
+      "objective": "Identify initial and final phonemes with explicit modeling",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Simula ng mata (/m/); dulo ng bata (/a/)"
+        },
+        "en": {
+          "sample_prompts": "Initial /s/ in sun; final /t/ in cat"
+        }
+      },
+      "suggested_activities": [
+        "Sound sorting",
+        "select"
+      ],
+      "formative_check": "5 first/last sound items",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L03",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L05",
+      "order": 5,
+      "title": "Build sound units",
+      "stage": "Foundations",
+      "objective": "Blend taught sound patterns without transferring orthographic rules blindly",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "ma/me/mi/mo/mu, ba/be/bi/bo/bu, ta/te/ti/to/tu"
+        },
+        "en": {
+          "sample_prompts": "Blend /s/ /a/ /t/ and /m/ /a/ /p/ to form CVC"
+        }
+      },
+      "suggested_activities": [
+        "Syllable/phoneme chips"
+      ],
+      "formative_check": "5 guided blends",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L04",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L06",
+      "order": 6,
+      "title": "First decodable words",
+      "stage": "Foundations",
+      "objective": "Read and connect short taught words to meaning",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "ma-ta, ba-ta, ma-ma from explicitly taught correspondences"
+        },
+        "en": {
+          "sample_prompts": "sat, map, mat from explicitly taught graphemes"
+        }
+      },
+      "suggested_activities": [
+        "Word cards",
+        "listen",
+        "picture"
+      ],
+      "formative_check": "5 decodable words",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L05",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L07",
+      "order": 7,
+      "title": "Read familiar words",
+      "stage": "Developing",
+      "objective": "Increase accuracy with high-frequency taught words",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "ako, ikaw, ito, ang, may in simple contexts"
+        },
+        "en": {
+          "sample_prompts": "I, a, the, is, can in decodable contexts"
+        }
+      },
+      "suggested_activities": [
+        "Word choice",
+        "repeat"
+      ],
+      "formative_check": "5 mixed review words",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L06",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L08",
+      "order": 8,
+      "title": "Words and pictures",
+      "stage": "Developing",
+      "objective": "Map words to concepts and distinguish similar items",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "pusa, aso, mesa, bola, bahay"
+        },
+        "en": {
+          "sample_prompts": "cat, dog, table, ball, home"
+        }
+      },
+      "suggested_activities": [
+        "Picture dictionary",
+        "matching"
+      ],
+      "formative_check": "5 word-to-image choices",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L07",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L09",
+      "order": 9,
+      "title": "Longer words",
+      "stage": "Developing",
+      "objective": "Blend or segment two- and three-syllable words and selected spelling patterns",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "la-pis, ma-sa-ya, pa-a-ra-lan with recording review"
+        },
+        "en": {
+          "sample_prompts": "rab-bit, bas-ket; teach sh/ch explicitly in later content"
+        }
+      },
+      "suggested_activities": [
+        "Chunk reading",
+        "segment"
+      ],
+      "formative_check": "5 words matched to taught patterns",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L08",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L10",
+      "order": 10,
+      "title": "Puzzle workshop",
+      "stage": "Developing",
+      "objective": "Reconstruct words from sound units and correct common errors",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "ba + ta = bata; pu + sa = pusa"
+        },
+        "en": {
+          "sample_prompts": "c + a + t = cat; s + h + i + p = ship if taught"
+        }
+      },
+      "suggested_activities": [
+        "Puzzle",
+        "word search"
+      ],
+      "formative_check": "5 assembled words",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L09",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L11",
+      "order": 11,
+      "title": "Read short phrases",
+      "stage": "Developing",
+      "objective": "Read simple meaningful phrases with visual support",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "ang aso; pulang bola; si Ana"
+        },
+        "en": {
+          "sample_prompts": "a red hat; the big cat; my bag"
+        }
+      },
+      "suggested_activities": [
+        "Phrase matching",
+        "audio"
+      ],
+      "formative_check": "5 short phrases",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L10",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L12",
+      "order": 12,
+      "title": "Build a sentence",
+      "stage": "Developing",
+      "objective": "Order words in basic sentences and attend to capitals and punctuation",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "May bola si Ana. / Ang aso ay masaya."
+        },
+        "en": {
+          "sample_prompts": "The cat is big. / I see a dog."
+        }
+      },
+      "suggested_activities": [
+        "Sentence builder",
+        "check"
+      ],
+      "formative_check": "5 ordered sentences",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L11",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L13",
+      "order": 13,
+      "title": "Listening and expression",
+      "stage": "Application",
+      "objective": "Listen, repeat and attend to pace, phrasing and meaning",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Pakinggan at ulitin: Masaya si Ana."
+        },
+        "en": {
+          "sample_prompts": "Hear and repeat: The bird can fly."
+        }
+      },
+      "suggested_activities": [
+        "Listen-repeat with optional self-record"
+      ],
+      "formative_check": "5 comprehension/accuracy checks",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L12",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L14",
+      "order": 14,
+      "title": "Read aloud with support",
+      "stage": "Application",
+      "objective": "Read short 2-3 sentence passages with optional adult feedback",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Si Ana ay may bola. Pula ang bola. Naglaro siya."
+        },
+        "en": {
+          "sample_prompts": "Sam has a bag. The bag is red. Sam is glad."
+        }
+      },
+      "suggested_activities": [
+        "Model",
+        "read",
+        "self-check/adult check"
+      ],
+      "formative_check": "Short passage and 5 follow-up checks",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L13",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L15",
+      "order": 15,
+      "title": "Vocabulary in context",
+      "stage": "Application",
+      "objective": "Infer simple word meaning using illustrations and sentence context",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Piliin ang larawan para sa masaya / malungkot sa pangungusap"
+        },
+        "en": {
+          "sample_prompts": "Use picture and context for happy / sad"
+        }
+      },
+      "suggested_activities": [
+        "Dictionary",
+        "matching",
+        "choose meaning"
+      ],
+      "formative_check": "5 context items",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L14",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L16",
+      "order": 16,
+      "title": "Story order",
+      "stage": "Application",
+      "objective": "Read a brief story and sequence beginning, middle and end",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Isang 3-bahaging kuwento tungkol sa paghahanda sa paaralan"
+        },
+        "en": {
+          "sample_prompts": "A short 3-part story about a school morning"
+        }
+      },
+      "suggested_activities": [
+        "Story reading",
+        "order picture cards"
+      ],
+      "formative_check": "5 sequence/detail items",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L15",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L17",
+      "order": 17,
+      "title": "Understand the story",
+      "stage": "Application",
+      "objective": "Answer who/what/where/why questions including simple inference",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Sino ang tumulong? Bakit natuwa ang bata?"
+        },
+        "en": {
+          "sample_prompts": "Who helped? Where did it happen? Why was she happy?"
+        }
+      },
+      "suggested_activities": [
+        "Story quiz",
+        "explain optional"
+      ],
+      "formative_check": "5 comprehension items",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L16",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    },
+    {
+      "id": "L18",
+      "order": 18,
+      "title": "Independent reader challenge",
+      "stage": "Application",
+      "objective": "Integrate decoding, fluency practice and comprehension in new text",
+      "tracks": {
+        "fil": {
+          "sample_prompts": "Bagong maikling kuwento + word reading + 3 story questions"
+        },
+        "en": {
+          "sample_prompts": "New short passage + word reading + 3 questions"
+        }
+      },
+      "suggested_activities": [
+        "Story",
+        "sentence",
+        "quiz",
+        "reward"
+      ],
+      "formative_check": "5 scored items + optional read aloud",
+      "minimum_check_items": 5,
+      "unlock_rule": {
+        "prerequisite_level": "L17",
+        "assessment_rule": "at least 4/5 on non-microphone scored items, or teacher-approved mastery; alternative supported practice allowed"
+      },
+      "production_status": "CURRICULUM SPECIFICATION ONLY: prompts, images, recordings and question banks must be authored and reviewed",
+      "notes": "Filipino and English are independently authored and tracked, not blind string translations."
+    }
+  ]
+}

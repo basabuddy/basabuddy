@@ -1,0 +1,12 @@
+{
+  "id": "A06",
+  "image": "/assets/dictionary/animals/baka.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-16759e3f-74a0-4d82-bdc8-5e93fea5844e.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Baka (Cow). Subject: one black-and-white dairy cow with small horns. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Use the animal references' big sparkling dark eyes, friendly smile and appealing rounded proportions, anatomically recognizable; whole animal centered. Pale pastel background matching existing cards. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "cb09a4a621172e0ed9dde7dd9c03113a5ac998020b03f7a6d15a8fd0f274c898",
+  "bytes": 29794,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

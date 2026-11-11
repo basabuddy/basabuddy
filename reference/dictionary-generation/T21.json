@@ -1,0 +1,12 @@
+{
+  "id": "T21",
+  "image": "/assets/dictionary/things/baso.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-696f794a-311a-41f3-9ff3-b75e6d54f5de.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Baso (Glass). Subject: one EMPTY transparent drinking glass, visibly no liquid. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Match the apple and pencil reference style for objects: simplified recognizable form, soft colorful polished shading, no added face or limbs. White or very pale neutral background. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "452bcb733a0618b578a80ee8b32c3c8470488846bf43913d587caa645aa5c6f4",
+  "bytes": 19604,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

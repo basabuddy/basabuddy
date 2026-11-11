@@ -1,0 +1,12 @@
+{
+  "id": "F08",
+  "image": "/assets/dictionary/food/mansanas.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/objects/apple.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 223,
+  "height": 247,
+  "sha256": "8ef6b33e8669f9ab70461216cbd3a94da3210c78eabbc35e57bee27eaad291af",
+  "bytes": 8434,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

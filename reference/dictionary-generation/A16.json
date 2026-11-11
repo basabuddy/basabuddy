@@ -1,0 +1,12 @@
+{
+  "id": "A16",
+  "image": "/assets/dictionary/animals/lamok.webp",
+  "source": "/Users/joselleannzulueta/.codex/generated_images/01a1c595-5096-7562-8662-1d189c6be0f3/exec-71238e41-0f40-4b07-89ab-13dbd108a4f8.png",
+  "method": "Built-in imagegen; existing BasaBuddy artwork used as style references",
+  "prompt": "Create ONE NEW BasaBuddy picture-dictionary CARTOON ILLUSTRATION of Lamok (Mosquito). Subject: one child-friendly mosquito with six slender legs, narrow wings and visible proboscis, no blood, no bite scene. The supplied images are STYLE REFERENCES ONLY, not edit targets; do not reproduce their subjects. Match their existing children's illustration style exactly: cute rounded simple forms, softly blended glossy shading, bright friendly colors, smooth edges and soft ground shadow. Use the animal references' big sparkling dark eyes, friendly smile and appealing rounded proportions, anatomically recognizable; whole animal centered. Pale pastel background matching existing cards. Square composition, one main subject centered with padding, no cropping. No photography, realism, different 3D style, anime, flat vector replacement, emojis, icons, text, letters, logos or watermarks. Output a single distinct illustration, never a grid or collage.",
+  "width": 640,
+  "height": 640,
+  "sha256": "6313f585252d77382c71fdb8b841bef9d3385b8cd30a2b5145ddfb08a250aaf3",
+  "bytes": 30210,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

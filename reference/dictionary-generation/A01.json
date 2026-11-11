@@ -1,0 +1,12 @@
+{
+  "id": "A01",
+  "image": "/assets/dictionary/animals/aso.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/illustrations/dog.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 640,
+  "height": 615,
+  "sha256": "9f53e99b25ca10c210ba36d2f95902215060db314e28e08839ec945e635bb096",
+  "bytes": 26286,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "language": "fil",
+    "text": "2",
+    "source": "/Users/joselleannzulueta/Downloads/BasaBuddy_Audio/Batch_01_Words_and_Syllables/009_dalawa.wav",
+    "path": "/audio/fil-d4735e3a265e16ee.wav",
+    "sha256": "d62539572bfa319cf54b1adcf486c7449353f5f861f7ebc6f25fa9f86f835ee1",
+    "review": "Named clips from existing user audio batch; native-speaker listening review pending",
+    "rejectedSource": "basabuddy_audio_wavs numbered clips rejected: all four were byte-identical"
+  },
+  {
+    "language": "fil",
+    "text": "3",
+    "source": "/Users/joselleannzulueta/Downloads/BasaBuddy_Audio/Batch_01_Words_and_Syllables/010_tatlo.wav",
+    "path": "/audio/fil-4e07408562bedb8b.wav",
+    "sha256": "699dc06dd776c899a9dcf227a82f95ce1c5c506053ba09ed5f5b46582e1691e5",
+    "review": "Named clips from existing user audio batch; native-speaker listening review pending",
+    "rejectedSource": "basabuddy_audio_wavs numbered clips rejected: all four were byte-identical"
+  },
+  {
+    "language": "fil",
+    "text": "4",
+    "source": "/Users/joselleannzulueta/Downloads/BasaBuddy_Audio/Batch_03_Syllables_and_Familiar_Words/037_apat.wav",
+    "path": "/audio/fil-4b227777d4dd1fc6.wav",
+    "sha256": "572bc5bc0f6517a0b51153f2df514a8e80eec64acfa8bde5de198d277610edb4",
+    "review": "Named clips from existing user audio batch; native-speaker listening review pending",
+    "rejectedSource": "basabuddy_audio_wavs numbered clips rejected: all four were byte-identical"
+  },
+  {
+    "language": "fil",
+    "text": "?",
+    "source": "/Users/joselleannzulueta/Downloads/BasaBuddy_Audio/Batch_04_Phrases_and_Sentences/053_tandang_pananong.wav",
+    "path": "/audio/fil-8a8de823d5ed3e12.wav",
+    "sha256": "c12c0f8733d7c516934cebdf216f44aaa369083d56edb09b9371d1a2c5cfbcf6",
+    "review": "Named clips from existing user audio batch; native-speaker listening review pending",
+    "rejectedSource": "basabuddy_audio_wavs numbered clips rejected: all four were byte-identical"
+  },
+  {
+    "language": "en",
+    "text": "2",
+    "spoken": "two",
+    "source": "Installed eSpeak-NG en-us, 135 words/minute; offline rendering",
+    "path": "/audio/en-d4735e3a265e16ee.wav",
+    "sha256": "ea90ac3a082b0789b9872e0bbd6846a417856f0790794d409722dd098e60cb1d",
+    "review": "Draft synthetic narration; educator listening review pending"
+  },
+  {
+    "language": "en",
+    "text": "3",
+    "spoken": "three",
+    "source": "Installed eSpeak-NG en-us, 135 words/minute; offline rendering",
+    "path": "/audio/en-4e07408562bedb8b.wav",
+    "sha256": "7026df8182c1fcd3d995543a151b70fdc41888870b7f892794b2e6f3f7b69a7c",
+    "review": "Draft synthetic narration; educator listening review pending"
+  },
+  {
+    "language": "en",
+    "text": "?",
+    "spoken": "question mark",
+    "source": "Installed eSpeak-NG en-us, 135 words/minute; offline rendering",
+    "path": "/audio/en-8a8de823d5ed3e12.wav",
+    "sha256": "2cd5fcd6bc2fce77b55332d245e7f754c4852b221c329e00b067a46376570bc8",
+    "review": "Draft synthetic narration; educator listening review pending"
+  }
+]

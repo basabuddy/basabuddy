@@ -1,0 +1,43 @@
+﻿test_id,category,test,test_steps,expected_result,priority,status,evidence
+BB-001,Visual QA,18 screen screenshot check,Compare each current 393x852 source export to implemented view,All design deviations documented; no invented existing details,P0,Partial,Exports inspected; four rendered screenshots visually reviewed; exact metadata unavailable.
+BB-002,Visual QA,Safe areas,Check iPhone reference and Android status/navigation bars,No hidden interactive elements,P0,Partial,Browser viewport overflow checks passed; physical safe areas untested.
+BB-003,Visual QA,Large labels,Inspect long Filipino and English text and text scaling,No truncated task instructions or clipped primary action,P1,Partial,Both tracks exercised and narrow overflow checked; 200% zoom not tested.
+BB-004,Visual QA,Owl consistency,Compare reference mascot assets across screens,Consistent original mascot; no substituted AI-created graphic,P1,Partial,Original raster artwork retained and crop contact sheet inspected; source vector assets unavailable.
+BB-005,Visual QA,Consistent navigation,"Check titles, tabs, back buttons across student pages",Navigation positions predictable,P1,Pass,Student route and tab browser tests.
+BB-006,Visual QA,Touch targets,Inspect buttons and lesson selection controls,"Targets at least 44x44 reference points, preferably larger for children",P1,Partial,44px minimum controls styled; exhaustive geometry audit pending.
+BB-007,Visual QA,Orientation and viewport,Check narrow and tall Android viewports,Layout responsive; no forced 393x852 runtime clipping,P1,Pass,"No horizontal overflow at 320, 393, 430, 1440px."
+BB-008,Navigation,Student entry,Tap student role from onboarding,Student profile and language then student home,P0,Pass,Onboarding profile/language/home browser test.
+BB-010,Navigation,Teacher entry,Tap teacher role,Teacher sign in then class dashboard,P0,MVP only,Local adult PIN gate; no verified school authorization.
+BB-011,Navigation,Hub tabs,Tap each visible student navigation item,Each destination correct; no dead ends,P0,Pass,Student routes exercised in Chromium.
+BB-012,Navigation,Locked level,Tap a level with unmet prerequisite,Explanation overlay; no activity unlock,P0,Pass,Locked explanation and route guard tested.
+BB-013,Navigation,Resume level,Leave and return to in-progress level,Exact step restored,P0,Pass,"Step, selected/submitted answers persisted and refreshed."
+BB-014,Navigation,Back button,Use visible back and Android hardware back,Consistent prior route or confirmation,P0,Partial,Explicit back routes implemented; physical system back untested.
+BB-015,Navigation,Completed review,Open a previously mastered lesson,Review available; mastery preserved,P1,Pass,Replay supported; lower retry preserves mastery in unit test.
+BB-016,Navigation,Quiz result route,Finish final item of level,"Results appears exactly once, then level map",P0,Pass,Result and next-level route exercised for 36 lessons.
+BB-017,Learning and assessment,Filipino and English independence,Complete Level 1 in Filipino then switch English,English Level 1 unchanged,P0,Pass,Independent language locks and profile isolation tested.
+BB-018,Learning and assessment,Language content independence,Inspect sound and task examples in both tracks,Correct reviewed language-specific content and audio,P0,Pending,Separate draft content; reviewed recordings not supplied.
+BB-019,Learning and assessment,Five item check,Finish level assessment,"Five independent scored questions, not only guided practice",P0,Pass,"Five scored items per level, 180 UI submissions completed."
+BB-020,Learning and assessment,Pass unlock,Score >=4 on 5 items and save,Level complete; next level unlocked,P0,Pass,Threshold unit test and browser sequential progression.
+BB-021,Learning and assessment,Retry recommendation,Score <4 on 5 items,Friendly remediation and practice; no shame language,P0,Pass,0/5 browser path retains lock and offers practice.
+BB-022,Learning and assessment,Correct feedback,Submit correct item,Explicit praise and Continue,P1,Pass,Correct feedback exercised across all lessons.
+BB-023,Learning and assessment,Incorrect feedback,Submit incorrect item,Hint and Try Again,P1,Partial,Incorrect hints and full-assessment retry implemented; first answers retain scoring.
+BB-024,Learning and assessment,Answer selection,Choose then change before submit,Selected state visible and editable,P1,Pass,Editable selections until Check; selected state persists.
+BB-025,Learning and assessment,Double submit,Tap Check rapidly twice,Single scored attempt and stable progress,P0,Partial,Checked state disables resubmission; rapid double-tap stress test pending.
+BB-026,Learning and assessment,Reattempt old level,Retry completed level and get lower score,Completed status preserved,P0,Pass,Monotonic completion/best-score unit test.
+BB-027,Learning and assessment,18 level integrity,Load each level from 1 to 18,All levels have valid data and no missing routes,P0,Pass,All 18 levels in both languages completed through UI.
+BB-028,Learning and assessment,Published content validation,Mark sample-only items as draft,Draft items cannot be released as reviewed production content,P0,Partial,All items marked draft; no reviewed production bank or release publishing system.
+BB-029,Audio/accessibility,Model audio,Tap playback on each activity,Correct prerecorded audio and visible error fallback,P0,Pending,Browser TTS/fallback implemented; no prerecorded model assets.
+BB-030,Audio/accessibility,Microphone denied,Deny microphone permission,Lesson can complete via no-mic alternative,P0,Pass,Denied microphone then no-mic completion tested.
+BB-031,Audio/accessibility,Recorder state,Allow mic; record then stop/play back,Clear indicators; no hidden or automatic recording,P0,Pending,Recorder implemented; real capture/replay device test outstanding.
+BB-032,Audio/accessibility,No false speech score,Complete optional read aloud,No unsupported pronunciation percentage,P0,Pass,No pronunciation scoring implemented or claimed.
+BB-033,Audio/accessibility,Motion reduction,Set reduced motion,Feedback still works without required animation,P1,Partial,Reduced-motion CSS implemented; OS integration not tested.
+BB-034,Audio/accessibility,Screen reader labels,Navigate interactive buttons with accessibility tools,Accessible names and reading order,P1,Partial,Labels and keyboard focus styles implemented; screen-reader audit pending.
+BB-035,Audio/accessibility,Non-drag alternative,Use word puzzle without dragging,Tap or reordering control provides equivalent completion,P1,Pass,Tap-only word and sentence building exercised.
+BB-036,Storage and security,Offline progress,Complete practice with network disabled,Progress saved locally,P0,Partial,No network-dependent progress operations; cold offline caching absent.
+BB-037,Storage and security,Force-close resume,Force-close mid-lesson and reopen,Step and answers restored safely,P0,Partial,Browser reload resume passed; actual force-close device test pending.
+BB-038,Storage and security,Sync conflicts,Create two offline sessions and sync,"No lost mastered state, deterministic conflict resolution",P0,Not implemented,No cloud synchronization.
+BB-040,Storage and security,Teacher roster isolation,Attempt to access learner not enrolled in class,Denied by backend policies,P0,Not implemented,No backend teacher rosters/RLS.
+BB-041,Storage and security,No client service-role key,Inspect built Android/web assets,No privileged database secret,P0,Pass,No database credentials or cloud SDK configured.
+BB-043,Storage and security,Child voice privacy,Check recording network traffic and local files,No voice upload by default; transparent optional retention,P0,Partial,Recorder uses in-memory blob URLs only; physical network recording audit pending.
+BB-044,Storage and security,Missing asset recovery,Remove/interrupt an audio/image asset,Accessible Retry and navigation; no blank screen,P1,Partial,Speech/storage/content error fallbacks implemented; exhaustive asset-removal test pending.
+BB-045,Storage and security,Android release test,Build and install on real Android phone,"Navigation, storage and audio work in built APK/AAB",P0,Out of scope,Local React web build requested; no native APK/AAB.

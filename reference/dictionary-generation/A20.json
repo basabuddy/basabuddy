@@ -1,0 +1,12 @@
+{
+  "id": "A20",
+  "image": "/assets/dictionary/animals/kuneho.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/illustrations/rabbit.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 640,
+  "height": 522,
+  "sha256": "d23c9bd6b04333d17f6fd7e0520c12a56176ebe5fa7618ca77e2d35abbade273",
+  "bytes": 13314,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

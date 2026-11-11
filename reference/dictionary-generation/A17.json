@@ -1,0 +1,12 @@
+{
+  "id": "A17",
+  "image": "/assets/dictionary/animals/pagong.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/illustrations/turtle.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 640,
+  "height": 535,
+  "sha256": "cc761945c9ea75e622baa271971b623404928e1ebbff0ba6011986d4ddfa6002",
+  "bytes": 15574,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

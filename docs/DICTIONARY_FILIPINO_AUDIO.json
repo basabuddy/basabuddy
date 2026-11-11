@@ -1,0 +1,650 @@
+[
+  {
+    "text": "ahas",
+    "path": "/audio/fil-e3dedc654e0a197a.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "e9afdd97a0ff44410dde5700d328c3a78f6949150e12b86e3488b0d0b33af027",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "aklat",
+    "path": "/audio/fil-95a0bc0a74e5d3a0.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "76bd1c77bf6ec803622488863532258b200b3593ef571bdc839d3984eb567d02",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "asin",
+    "path": "/audio/fil-4b976f8aa5c2cf18.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "68efcdeec14bb1716ca0514270b1fd5895df0e860df87a23c32ae8c4a53ceda8",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "asukal",
+    "path": "/audio/fil-63edeb7fd5962f07.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "cf25a1c30c786728b288c2040f9a336fdf7c6b242c1d35eaef3598c25e6daf02",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "baboy",
+    "path": "/audio/fil-7cdd2bf8fcf351aa.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "bf760dc213cbd1470ff65db6a23e886d14a5aa687058b55c6888ce42a8f5bf4f",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bag",
+    "path": "/audio/fil-c018019b6a8b01ab.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "6f113a83f2996610862ac71afa41a7545ce7481c81e436fe23393c4575fc8209",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "baka",
+    "path": "/audio/fil-3f8c49ce280206ab.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "aa711eacc5e7ec8dc1a633474e55106980b457dcea9d972d2f268098d04f6913",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bangka",
+    "path": "/audio/fil-d4d3b6bf285d9f79.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "a477cfefddcf90ee9d5f19a75dc2bce449ec7d24bb92d1d9c12ca109413db610",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "baso",
+    "path": "/audio/fil-6ed72815e65b51b6.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "556ea9bc730fa5ae604a4223886d338888064dc3a15a2f423cde499bf2010ecf",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bayabas",
+    "path": "/audio/fil-c9805daa9fe30d93.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "a303f36dffe2fef0a10eab101b96f339db948fb0215fcc8910409e0086d595e2",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bintana",
+    "path": "/audio/fil-909b145de1032de1.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8873f9f688bf3b6f79235172ecb39b16cbcd40c1228feb0bdaff0e611d8af14b",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bisikleta",
+    "path": "/audio/fil-38d7c57df685809f.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f52304fa8f4d4fa6f69d177a951b2ea1e16a4137c1502431068fd2eba9591c97",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "bubuyog",
+    "path": "/audio/fil-166d336bd742976d.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "920948ff966d7766ff1eb4bffe5555a64fd35d96b7509026dad1eae749cd25d2",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "buwaya",
+    "path": "/audio/fil-43b3b69bad1abe29.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "99d41e30a19a9a75756b9f29c411c270360fbc99efb284dff4e376bc6fc3ba4a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "daga",
+    "path": "/audio/fil-766f8b801b6fb9e7.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "7c3287ed3720500a37d54f5fc2d0ce1e01e3b03acbd086bfd79ece1757029b1d",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "damit",
+    "path": "/audio/fil-e9858a5a7dde8deb.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "050c866a2cd183779c80e9715f88fc25455d4b1ca0f9e668c56685f60d79c8d4",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "elepante",
+    "path": "/audio/fil-4738df8370eb9c1f.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8f85b5c3207d64696fbf569973977498760e142596e9414107bb06e11371349d",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "gatas",
+    "path": "/audio/fil-199ae42a13c206d3.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "156623a72d006b7bd651e04a137fdce46c9be3328e7e4c3f8735144de8f773d8",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "gunting",
+    "path": "/audio/fil-29190cd7afed83aa.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "86c137ecdbf2a555eccb8a76cfc92f4c308862e7c926cd10acf02e7eb962e93d",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "ilaw",
+    "path": "/audio/fil-49854b344ed3d6b8.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f882e0fed8d3c92ce5bd55e7c6ca5820c28f1092412e612c81bb4e48c8fbbb72",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "isda",
+    "path": "/audio/fil-8aa33c28021849e0.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "cf051cf531a32f181a623edf07f38d4443ce847bab8b739d7064f96440a0b1c8",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "itlog",
+    "path": "/audio/fil-5d5610c30d8b8a33.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "d82d20c84fac7efde0666b1b238d25d6e48c788a068be1f1bb773dfc9f438bec",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kabayo",
+    "path": "/audio/fil-4fcbff14cdda0025.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f25ffbf9848c5d136f68f0f5ff6ae05f3b84d70ed4b11c286bbef89ffa70f85c",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kalabaw",
+    "path": "/audio/fil-13b623dcc54a87a2.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "881cb9016b7669b725673dc1d2c662fedeb32092017f32fa96d909fffab50862",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kama",
+    "path": "/audio/fil-29d06a216a618ec4.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "afa70bd2566b4f2dcf14feb17b2e80b968294000293c14536eead13c3bd3f48c",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kamatis",
+    "path": "/audio/fil-65d182bcf240c6cc.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "13e8670998c91f444958d1f351fa61e83291fc83ad1186a654d611e68dd6be30",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kambing",
+    "path": "/audio/fil-48a149afd9edfa8d.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "a2dabb58c529545f7157e4c551d6c4c48f25240493c155b24b8b833079403a85",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kanin",
+    "path": "/audio/fil-5d1321a851d80ae9.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "d8d94420e89be06521984275dc47f7b036a5c8f4fe6f8401a253ad549c01678a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "karot",
+    "path": "/audio/fil-b010583c197d12d1.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "00ff60fa7fa8231660731bb1ea32fa72fd2e84087695967a3d700370e5aa5d48",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "keso",
+    "path": "/audio/fil-5e1457ccda4c9351.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "6c66973f6895ac836060ae5999a041de8df5dd72dec8263afe1a39444a2e7d13",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kotse",
+    "path": "/audio/fil-97f3ad3598678dbb.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "de6e97c0e79ea029bcfba050360fd94905242cca676fca8946a65d2b949592e4",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "krayola",
+    "path": "/audio/fil-61e853e0f9d18e63.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "34685e1267a4016e9029be17802b8aa84e0532b5cbb156bc1bd8bc7c4af200bf",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kumot",
+    "path": "/audio/fil-40ce5a2ecaf892be.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f06360fd14486e9fd2d019c38615e80ef8ccd8f6ad002a6fdbe286afb89b5da4",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "kutsara",
+    "path": "/audio/fil-968a8868598949be.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "cb21842192fa1f01501019820437c8b01b328afd87dce7e46eb63ad165439d62",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "lamok",
+    "path": "/audio/fil-1bfdfcc96399443a.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f2ac68e41f91e9cda79531c2f2c5f68802a352687e2dce4aa19f9d18f7650780",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "langgam",
+    "path": "/audio/fil-04ac6bc7ca55efbb.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "fd86608dc8e500a580b3475b136e2dba2a45243846f92908aaced48ce961189a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "lapis",
+    "path": "/audio/fil-03e4f7cf9317923e.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "2435ceaeb1033b9bc21492ee09b6343f8671a40217ed59c093f99ea919f7559c",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "laruan",
+    "path": "/audio/fil-5e387365cd378b1a.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "081bcbcd022c49236fc4a7ecfc2c5f1b62612443f0a14fd4e6bd2aaab0f67762",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "leon",
+    "path": "/audio/fil-1534cf2af76ecd84.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "017cb0e70b1862b74f9650fea2eb52454de3e49ee676de777fbe9583fc857624",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "lobo",
+    "path": "/audio/fil-3e30da3972953c02.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "570ec06b2b3fe425e958b68285bc4262923f9effcec82b9f243b84e8ff844e12",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "mais",
+    "path": "/audio/fil-ad6276b240df42d4.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "fe18658738932425d716d013072f89a1140166bca30236063ff2ea62c96d1399",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "mangga",
+    "path": "/audio/fil-1dfb894f53880156.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "010188f29413eb8afa049215789c28215e29bfea4db756c0c6897790f195aad8",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "manika",
+    "path": "/audio/fil-938320c64bcbb0d4.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "7e6854a5905ee7da74822d3f09ed0fc3a3fcd56d0b1c136835e7b5c49b555602",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "manok",
+    "path": "/audio/fil-0a2716352882f509.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "852cfc407a6f52aed6305694b7a03ce204db424e6fe5d81310feb31cf47eda1f",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "mesa",
+    "path": "/audio/fil-73e29454bd930074.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f5dc60ed1c00a5781e7f574d03d5e962530f04d5fe8a0e5b07155cfdb196f6f7",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "niyog",
+    "path": "/audio/fil-5089deb85e355fc3.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "80d7fe0f8ee8a23c2c973a00c22d6cfcf87e81ccf324c2d9850b3e64cb61e76d",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "orasan",
+    "path": "/audio/fil-095141c714f45fea.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "918a43e38d4c911d35077e3bc5fdb2206e7ce15ce29c046f6f413e89571a81d9",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pakwan",
+    "path": "/audio/fil-e1d24b2c379f2843.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8a7bda524e40138dbb46b6d08a58dde3bdecfcfe68557620b967ff252a0a2dc1",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "palaka",
+    "path": "/audio/fil-17864a72e1a91775.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "4dfebdfb6375a4838107dbc02d4acb367b019552d1ee41b08f83a9019ef7a3d7",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pambura",
+    "path": "/audio/fil-7e3af96896ef6600.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "3d4a0a6b11446c22a9c10d153a799f62b56e9546e8cc0bc2f9aa33fbc6fd0cf3",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pandikit",
+    "path": "/audio/fil-5abf781f58f98de7.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8515c8240d8a3dc365958094f2273a707b8e4d8e43f1f2a0038ab3342a79578e",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "papaya",
+    "path": "/audio/fil-98a4f7655958a385.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "2e956832a7e081acb44e4f7e8acbdf1fb03e6463d8e290f385d18f850901e6bd",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "papel",
+    "path": "/audio/fil-abd0f5b700fc5b56.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "442287ef95a082c9751463aa750c906917ff51fb2582b249e934ce6b54fff85a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "paruparo",
+    "path": "/audio/fil-83515644d5fa5c79.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "5c5cd493699e481515a98568da1a3b2f3fb4174ba9cd291aff54b18d0f9a33f5",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "patatas",
+    "path": "/audio/fil-cf7e8e6bb7b9c6d2.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "023710c146f637a97e0d890d13793bd8089dccaea485f6c86630d16f5dba4115",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pato",
+    "path": "/audio/fil-c4aa39c9c54ac903.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "bd0bcd953829155e5646d8d2cb287c7e98f370b8e40433281b624d8f2380c039",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "payong",
+    "path": "/audio/fil-8a694a8606bf79f6.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8648a19af30ec387f13dc973b4a9873b7c04617c8efc92d5eebd5b05c72806ac",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pinto",
+    "path": "/audio/fil-a4b785c6d774e9f9.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "cd7026c9445b0ab98b1e99f472bf5f4a428853d9039d93e01a2eef12f9990f0e",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pinya",
+    "path": "/audio/fil-52346ee4321073cf.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "f26679b39e30aa482a5fc9c54b5ee5cf53495d6ae3a58fca0ce6865eab96d84a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "pisara",
+    "path": "/audio/fil-1398c04e1ef2e699.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "7f801f8ef2856f6d6ca53c8c2c6d1a09eac7baca2bf58e34d3297afe21027b44",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "plato",
+    "path": "/audio/fil-87e4571bc7b47363.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8ed07af5fe786276b1c3e7a3dc42b2e24e8c3ad3f60ecfb954a91651bd3eb846",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "repolyo",
+    "path": "/audio/fil-354cdce43ed72789.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "c5522bbcad1d978beebe5cf4bfd433122d182fd2b5c5bccbae2cb3328ab2e999",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "sabaw",
+    "path": "/audio/fil-e0bc55ba9910d1b3.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "12f47dfe552931342252fe6e1e34d76da4741e1d1e6eaf62b3663e33e690d9d9",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "sabon",
+    "path": "/audio/fil-3f875dc5ab67a79b.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8ca7efbb16b55e53510e74e2506ae0c947521330eca8cc67193543870229b8d1",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "salamin",
+    "path": "/audio/fil-035007f03d5a3054.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "3cf21f69f2283de9406a289a8867e5e0f4b1402bbef252da9be46425245203a3",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "sipilyo",
+    "path": "/audio/fil-78335fce88b18e48.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "31290c8df66007a14081505813a5afd877e60c7dcf9d77adcbf5d09f4a13434b",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "sorbetes",
+    "path": "/audio/fil-dfc59b7051a352b8.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "bd198e7b9ede8dd330be948d6a8624868e68aa9c26ba43b59f69a9e58c1e85b0",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "suklay",
+    "path": "/audio/fil-a0e1b451723e30a8.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "4459751ea2a3d47f5a093fb7fd5a332e9c12c4269ea86326697cada4fed15899",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "susi",
+    "path": "/audio/fil-b77cee999c72f1af.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "99102ef771e2c03da93068b12b3d7790e82d68ba158dba4ea604cd4245248710",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "talong",
+    "path": "/audio/fil-544dd40dcd799f08.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "95f229321452f1822aede69172f5ace1fe0fa75eaf0824b6e00f77a138914d94",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "telepono",
+    "path": "/audio/fil-7a8cebc8b4fe6247.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "54f261935e67ed12fbc4fde05280fac20517a113c15bf1171560d2c03dd30ba6",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "tigre",
+    "path": "/audio/fil-ca9e651763255754.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "2df64bcc43eb901c555c6135a11f5025f3ad9c01fdc34a7a98e91117720bd623",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "timba",
+    "path": "/audio/fil-c76a2c585134e002.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "041a08f9fd422ef56fa2dc8eb7b1900b4ce22b2a61fab90c2920b10ef2acdd69",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "tinapay",
+    "path": "/audio/fil-4e2c8ed7785086e4.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8db565a5bc3edec1985ef846d221dc431ffd2c0cef9c9c77bd39767c1bc97e96",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "tinidor",
+    "path": "/audio/fil-0c3ba0f43128ea3e.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "d1c318ab3eb8bdfcca5ff9549f497fa7589e489cdd696066970f295352adb0a5",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "tubig",
+    "path": "/audio/fil-6181ccb0a01b5b14.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "34385ca5d6c443d70aafa12139b6f08d34addafd7d3ce3d879561ef734c58a7b",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "ubas",
+    "path": "/audio/fil-80be6d0e021c1c62.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "8a000e5b7664d22f55a245f6b2542c297d13a49c4494c19ffa973efc9d19e3a6",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "unan",
+    "path": "/audio/fil-6b9bad76181d63da.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "4609f59fb34ed0d382f23cf9bac83959ca384e429e446f4c143a8414fddbb9e5",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "unggoy",
+    "path": "/audio/fil-464c1de52f4809db.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "3f6035c82a985a8251d0299c523ad485cb8cb1c11c21410dd5ce6ae57089c13a",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "upuan",
+    "path": "/audio/fil-9ca46a3f7300b644.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "0b6011ceb81062f435d15c1e2da66a49cae1d9ff4e4675115c37568447518f91",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  },
+  {
+    "text": "walis",
+    "path": "/audio/fil-5f236c3e3c00987d.mp3",
+    "voice": "fil-PH-BlessicaNeural",
+    "provider": "Microsoft Edge TTS",
+    "sha256": "cbd52d0a9c872f0e339d5b52a9f220e34999d87671ad9a5109dce7442aa61d1c",
+    "review": "Synthetic narration; fluent-speaker review pending"
+  }
+]

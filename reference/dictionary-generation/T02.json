@@ -1,0 +1,12 @@
+{
+  "id": "T02",
+  "image": "/assets/dictionary/things/aklat.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/objects/open-book.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 304,
+  "height": 177,
+  "sha256": "816fc417224af35b3022827b347caf1089002d985627f1bf2154b3637d5b95c1",
+  "bytes": 10846,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

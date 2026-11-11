@@ -1,0 +1,252 @@
+[
+  {
+    "path": "illustrations/bird.webp",
+    "before": [
+      784,
+      652
+    ],
+    "oldBytes": 38392,
+    "status": "replaced",
+    "after": [
+      2048,
+      1703
+    ],
+    "newBytes": 610740,
+    "sha256": "0d3a63c551372f209f3151dee496e544f7065efe6bd2ef947dc3ba729cc7805c",
+    "zipMember": "illustrations copy/bird.webp"
+  },
+  {
+    "path": "illustrations/celebrate.webp",
+    "before": [
+      1280,
+      654
+    ],
+    "oldBytes": 75154,
+    "status": "replaced",
+    "after": [
+      2560,
+      1308
+    ],
+    "newBytes": 1095172,
+    "sha256": "ddd2c1546fa4c7825fa5f7a863065c4540f0b88db91607b7f3bb5b42dab72f77",
+    "zipMember": "illustrations copy/celebrate.webp"
+  },
+  {
+    "path": "illustrations/penguin.webp",
+    "before": [
+      800,
+      640
+    ],
+    "oldBytes": 44354,
+    "status": "replaced",
+    "after": [
+      2048,
+      1638
+    ],
+    "newBytes": 692814,
+    "sha256": "dedbe9ba9bfac76f3dfc220b312683febc21e3445d86c4a513523fb0af56b42c",
+    "zipMember": "illustrations copy/penguin.webp"
+  },
+  {
+    "path": "illustrations/rabbit.webp",
+    "before": [
+      784,
+      640
+    ],
+    "oldBytes": 26576,
+    "status": "replaced",
+    "after": [
+      2048,
+      1672
+    ],
+    "newBytes": 430870,
+    "sha256": "14ef07ecb2097ae2ed4770695291ec116d14bd374715c82bc03822f01f46c24b",
+    "zipMember": "illustrations copy/rabbit.webp"
+  },
+  {
+    "path": "illustrations/turtle.webp",
+    "before": [
+      800,
+      668
+    ],
+    "oldBytes": 31768,
+    "status": "replaced",
+    "after": [
+      2048,
+      1710
+    ],
+    "newBytes": 506992,
+    "sha256": "1afd734d9a7de2746278bb78f5694ab65478b141cbf871c045d99cbad966b7f9",
+    "zipMember": "illustrations copy/turtle.webp"
+  },
+  {
+    "path": "illustrations/sentence.webp",
+    "before": [
+      497,
+      497
+    ],
+    "oldBytes": 22542,
+    "status": "replaced",
+    "after": [
+      1988,
+      1988
+    ],
+    "newBytes": 1148116,
+    "sha256": "01e9f09c0a6b5ac7a1984ef24a6a8b5e56b1629e006d536c5fed2d20a7a0ccfe",
+    "zipMember": "illustrations copy/sentence.webp"
+  },
+  {
+    "path": "illustrations/puzzle.webp",
+    "before": [
+      550,
+      560
+    ],
+    "oldBytes": 19770,
+    "status": "replaced",
+    "after": [
+      2011,
+      2048
+    ],
+    "newBytes": 1055150,
+    "sha256": "b8dfa671086d29a3cdb587d6fccf1caf6f65e9cbae2a7915fa698ca460da0d22",
+    "zipMember": "illustrations copy/puzzle.webp"
+  },
+  {
+    "path": "illustrations/dog.webp",
+    "before": [
+      544,
+      523
+    ],
+    "oldBytes": 16518,
+    "status": "replaced",
+    "after": [
+      2048,
+      1969
+    ],
+    "newBytes": 1031250,
+    "sha256": "c1cef4fed1752b0852b853711c28d5b0d5a35897f7ed74098e46d1c90b637992",
+    "zipMember": "illustrations copy/dog.webp"
+  },
+  {
+    "path": "mascots/welcome-original.webp",
+    "before": [
+      703,
+      653
+    ],
+    "oldBytes": 30278,
+    "status": "replaced",
+    "after": [
+      2048,
+      1902
+    ],
+    "newBytes": 1293980,
+    "sha256": "a0db4ca118900d037e963c6a72d95cfc102ba9bea3c8c179c8695b294873beac",
+    "zipMember": "mascots copy/welcome-original.webp"
+  },
+  {
+    "path": "objects/cloud.webp",
+    "before": [
+      651,
+      366
+    ],
+    "oldBytes": 112930,
+    "status": "replaced",
+    "after": [
+      2048,
+      1151
+    ],
+    "newBytes": 283036,
+    "sha256": "0515825c02d5bfcf7ab7e70f6ebacce4fb882c093295263c60a555a486fd404b",
+    "zipMember": "objects copy/cloud.webp"
+  },
+  {
+    "path": "illustrations/cat.webp",
+    "before": [
+      311,
+      363
+    ],
+    "oldBytes": 11884,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "backgrounds/classroom.webp",
+    "before": [
+      530,
+      258
+    ],
+    "oldBytes": 167336,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "backgrounds/meadow.webp",
+    "before": [
+      489,
+      258
+    ],
+    "oldBytes": 149814,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "backgrounds/park.webp",
+    "before": [
+      664,
+      425
+    ],
+    "oldBytes": 288494,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "backgrounds/school.webp",
+    "before": [
+      676,
+      425
+    ],
+    "oldBytes": 286148,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "backgrounds/sky.webp",
+    "before": [
+      485,
+      258
+    ],
+    "oldBytes": 77134,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "objects/apple.webp",
+    "before": [
+      223,
+      247
+    ],
+    "oldBytes": 55832,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "objects/books.webp",
+    "before": [
+      301,
+      189
+    ],
+    "oldBytes": 55656,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "icons/star.webp",
+    "before": [
+      153,
+      140
+    ],
+    "oldBytes": 17210,
+    "status": "missing Batch 2 ZIP"
+  },
+  {
+    "path": "icons/puzzle.webp",
+    "before": [
+      114,
+      100
+    ],
+    "oldBytes": 11914,
+    "status": "missing Batch 2 ZIP"
+  }
+]

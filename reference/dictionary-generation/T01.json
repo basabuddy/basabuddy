@@ -1,0 +1,12 @@
+{
+  "id": "T01",
+  "image": "/assets/dictionary/things/lapis.webp",
+  "source": "/Users/joselleannzulueta/basabuddy./public/assets/objects/pencil.webp",
+  "method": "Reused existing BasaBuddy artwork; original kept unchanged",
+  "prompt": "Reuse existing matching asset",
+  "width": 113,
+  "height": 181,
+  "sha256": "2b868f9ae4e737ebc16c2f1c8cca447394f44169972f6d30bdf7dc910ca9bad3",
+  "bytes": 3222,
+  "review": "Visually inspected in labeled contact sheets: corresponding subject and established animal/object style; educator review remains pending"
+}

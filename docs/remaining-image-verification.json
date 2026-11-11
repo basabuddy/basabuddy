@@ -1,0 +1,132 @@
+[
+  {
+    "path": "public/assets/mascots/welcome-original.webp",
+    "resolution": [
+      2048,
+      1902
+    ],
+    "batch1Match": true,
+    "sha256": "a0db4ca118900d037e963c6a72d95cfc102ba9bea3c8c179c8695b294873beac",
+    "displayed": true,
+    "servedSha256": "a0db4ca118900d037e963c6a72d95cfc102ba9bea3c8c179c8695b294873beac",
+    "screenStateCount": 10,
+    "exampleScreen": "en/welcome"
+  },
+  {
+    "path": "public/assets/mascots/reading.webp",
+    "resolution": [
+      331,
+      318
+    ],
+    "batch1Match": null,
+    "sha256": "7250d77621a1e5fb5fe563a878dd7d39e091ba9007602c346010ad4ef85ab6ec",
+    "displayed": true,
+    "servedSha256": "7250d77621a1e5fb5fe563a878dd7d39e091ba9007602c346010ad4ef85ab6ec",
+    "screenStateCount": 377,
+    "exampleScreen": "en/student/home"
+  },
+  {
+    "path": "public/assets/characters/teacher.webp",
+    "resolution": [
+      244,
+      278
+    ],
+    "batch1Match": null,
+    "sha256": "c45a4cc71e2aa16aef6b2983bde1d9146fbffd8beeb707a2b815315084bb7284",
+    "displayed": true,
+    "servedSha256": "c45a4cc71e2aa16aef6b2983bde1d9146fbffd8beeb707a2b815315084bb7284",
+    "screenStateCount": 55,
+    "exampleScreen": "teacher-gate"
+  },
+  {
+    "path": "public/assets/characters/reader.webp",
+    "resolution": [
+      273,
+      284
+    ],
+    "batch1Match": null,
+    "sha256": "98dfceb180364446609fd0d1098bcbe5cf6dc66e4148d82b29d21f8f64f99921",
+    "displayed": true,
+    "servedSha256": "98dfceb180364446609fd0d1098bcbe5cf6dc66e4148d82b29d21f8f64f99921",
+    "screenStateCount": 30,
+    "exampleScreen": "en/student/practice/aloud"
+  },
+  {
+    "path": "public/assets/objects/apple.webp",
+    "resolution": [
+      223,
+      247
+    ],
+    "batch1Match": null,
+    "sha256": "bc84fac30e35886b822b05d81aecfdbc4d4bce78244e0a871182b82c8f969864",
+    "displayed": true,
+    "servedSha256": "bc84fac30e35886b822b05d81aecfdbc4d4bce78244e0a871182b82c8f969864",
+    "screenStateCount": 40,
+    "exampleScreen": "en/student/practice/repeat"
+  },
+  {
+    "path": "public/assets/illustrations/cat.webp",
+    "resolution": [
+      311,
+      363
+    ],
+    "batch1Match": null,
+    "sha256": "95dc3b8c1fc4b14657c3f6e7190d6f5f2c17ee06d6547a9df59d1bad26c57f72",
+    "displayed": true,
+    "servedSha256": "95dc3b8c1fc4b14657c3f6e7190d6f5f2c17ee06d6547a9df59d1bad26c57f72",
+    "screenStateCount": 40,
+    "exampleScreen": "en/student/dictionary"
+  },
+  {
+    "path": "public/assets/illustrations/dog.webp",
+    "resolution": [
+      2048,
+      1969
+    ],
+    "batch1Match": true,
+    "sha256": "c1cef4fed1752b0852b853711c28d5b0d5a35897f7ed74098e46d1c90b637992",
+    "displayed": true,
+    "servedSha256": "c1cef4fed1752b0852b853711c28d5b0d5a35897f7ed74098e46d1c90b637992",
+    "screenStateCount": 40,
+    "exampleScreen": "en/student/practice/find"
+  },
+  {
+    "path": "public/assets/illustrations/puzzle.webp",
+    "resolution": [
+      2011,
+      2048
+    ],
+    "batch1Match": true,
+    "sha256": "b8dfa671086d29a3cdb587d6fccf1caf6f65e9cbae2a7915fa698ca460da0d22",
+    "displayed": true,
+    "servedSha256": "b8dfa671086d29a3cdb587d6fccf1caf6f65e9cbae2a7915fa698ca460da0d22",
+    "screenStateCount": 30,
+    "exampleScreen": "en/student/practice/puzzle"
+  },
+  {
+    "path": "public/assets/illustrations/sentence.webp",
+    "resolution": [
+      1988,
+      1988
+    ],
+    "batch1Match": true,
+    "sha256": "01e9f09c0a6b5ac7a1984ef24a6a8b5e56b1629e006d536c5fed2d20a7a0ccfe",
+    "displayed": true,
+    "servedSha256": "01e9f09c0a6b5ac7a1984ef24a6a8b5e56b1629e006d536c5fed2d20a7a0ccfe",
+    "screenStateCount": 30,
+    "exampleScreen": "en/student/practice/sentence"
+  },
+  {
+    "path": "public/assets/illustrations/celebrate.webp",
+    "resolution": [
+      2560,
+      1308
+    ],
+    "batch1Match": true,
+    "sha256": "ddd2c1546fa4c7825fa5f7a863065c4540f0b88db91607b7f3bb5b42dab72f77",
+    "displayed": true,
+    "servedSha256": "ddd2c1546fa4c7825fa5f7a863065c4540f0b88db91607b7f3bb5b42dab72f77",
+    "screenStateCount": 185,
+    "exampleScreen": "daily-complete"
+  }
+]

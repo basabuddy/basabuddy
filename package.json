@@ -1,0 +1,36 @@
+{
+  "name": "basabuddy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/verify-image-assets.mjs && node scripts/audit-dictionary.mjs && node scripts/audit-audio.mjs && tsc -b && vite build && node scripts/build-offline.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run src",
+    "test:e2e": "playwright test",
+    "audit:audio": "node scripts/audit-audio.mjs",
+    "audit:images": "python3 scripts/audit-images.py",
+    "sync:images": "python3 scripts/sync-image-metadata.py",
+    "audit:dictionary": "node scripts/audit-dictionary.mjs --write"
+  },
+  "dependencies": {
+    "@fontsource/baloo-2": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
