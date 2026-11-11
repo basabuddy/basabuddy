@@ -11,3 +11,5 @@ public/audio/*.partial.mp3
 
 # Local Netlify folder
 .netlify
+
+/node_modules
