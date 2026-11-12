@@ -10,6 +10,7 @@ async function signup(page:Page,email='parent@example.com',name='Parent Ana'){
  await page.getByLabel('Confirm password',{exact:true}).fill(password);
  await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page).toHaveURL(/\/profiles$/);
+ await expect(page.getByLabel('Nickname',{exact:true})).toHaveValue(name);
 }
 async function login(page:Page,email='parent@example.com',pass=password){
  await page.goto('/login');
@@ -40,6 +41,7 @@ test('signup, profile photo, session reload, logout, login, and scoped progress 
  expect(await page.evaluate(()=>localStorage.getItem('basabuddy:v1'))).toBe(guest);
  await login(page,'PARENT@EXAMPLE.COM');await expect(page).toHaveURL(/\/profiles$/);
  await expect(page.getByRole('button',{name:/Luna Grade/})).toBeVisible();
+ await expect(page.getByLabel('Nickname',{exact:true})).toHaveValue('');
  await page.goto('/account');await page.getByRole('button',{name:'Remove photo',exact:true}).click();
  await expect(page.getByRole('status')).toHaveText('Your profile photo was removed.');
  await page.reload();await expect(page.getByRole('img',{name:'Your profile photo',exact:true})).toHaveCount(0);
