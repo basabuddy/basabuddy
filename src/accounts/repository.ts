@@ -1,6 +1,7 @@
 import {accountStorageKey} from '../data/repository';
 
-export interface LocalAccount {id:string; name:string; email:string; photo?:string; createdAt:string}
+export interface LocalAccount {id:string; name:string; email:string; grade:string; photo?:string; createdAt:string}
+export interface AccountDetailsInput {name:string;email:string;grade:string;currentPassword?:string;newPassword?:string}
 interface AccountRecord extends LocalAccount {salt:number[]; verifier:number[]; iterations:number}
 const DATABASE='basabuddy-accounts';
 const ITERATIONS=310000;
@@ -46,8 +47,13 @@ async function writeRecord(record:AccountRecord,create=false) {
  });
 }
 
-function publicAccount({salt:_salt,verifier:_verifier,iterations:_iterations,...account}:AccountRecord):LocalAccount{return account;}
+function publicAccount({salt:_salt,verifier:_verifier,iterations:_iterations,...account}:AccountRecord):LocalAccount{return {...account,grade:account.grade??'1'};}
 const normalizeEmail=(email:string)=>email.trim().toLowerCase();
+function validateDetails(name:string,email:string,grade:string){
+ if(!name||name.length>50)throw new Error('Enter a name of up to 50 characters.');
+ if(email.length>254||!/^\S+@[^\s@]+\.[^\s@]+$/.test(email))throw new Error('Enter a valid parent email address.');
+ if(!['1','2','3'].includes(grade))throw new Error('Choose Grade 1, 2, or 3.');
+}
 function validatePassword(password:string){if(password.length<8||password.length>128)throw new Error('Use a password between 8 and 128 characters.');}
 function validatePhoto(photo?:string){if(photo&&(!photo.startsWith('data:image/jpeg;base64,')||photo.length>200000))throw new Error('Please choose your photo again.');}
 
@@ -66,13 +72,12 @@ async function checkPassword(record:AccountRecord,password:string){
 
 export async function findAccount(id:string):Promise<LocalAccount|undefined>{const record=await readRecord(id);return record?publicAccount(record):undefined;}
 
-export async function createAccount(input:{name:string;email:string;password:string;photo?:string}):Promise<LocalAccount>{
- const name=input.name.trim(),email=normalizeEmail(input.email);
- if(!name||name.length>50)throw new Error('Enter a name of up to 50 characters.');
- if(email.length>254||!/^\S+@[^\s@]+\.[^\s@]+$/.test(email))throw new Error('Enter a valid parent email address.');
+export async function createAccount(input:{name:string;email:string;password:string;grade?:string;photo?:string}):Promise<LocalAccount>{
+ const name=input.name.trim(),email=normalizeEmail(input.email),grade=input.grade??'1';
+ validateDetails(name,email,grade);
  validatePassword(input.password);validatePhoto(input.photo);
  const salt=Array.from(crypto.getRandomValues(new Uint8Array(16)));
- const record:AccountRecord={id:crypto.randomUUID(),name,email,photo:input.photo,createdAt:new Date().toISOString(),salt,
+ const record:AccountRecord={id:crypto.randomUUID(),name,email,grade,photo:input.photo,createdAt:new Date().toISOString(),salt,
   verifier:await derivePassword(input.password,salt,ITERATIONS),iterations:ITERATIONS};
  await writeRecord(record,true);
  return publicAccount(record);
@@ -82,6 +87,40 @@ export async function authenticate(email:string,password:string):Promise<LocalAc
  const record=await readRecord(normalizeEmail(email),true);
  if(!record||!await checkPassword(record,password))throw new Error('Email or password is incorrect. Use an account created on this device.');
  return publicAccount(record);
+}
+
+export async function saveAccountDetails(id:string,input:AccountDetailsInput):Promise<LocalAccount>{
+ const name=input.name.trim(),email=normalizeEmail(input.email),grade=input.grade;
+ validateDetails(name,email,grade);
+ const record=await readRecord(id);
+ if(!record)throw new Error('This account no longer exists. Please log in again.');
+ const sensitive=email!==record.email||!!input.newPassword;
+ if(sensitive&&(!input.currentPassword||!await checkPassword(record,input.currentPassword)))throw new Error('Enter your correct current password to change your email or password.');
+ let credentials:Pick<AccountRecord,'salt'|'verifier'|'iterations'>|undefined;
+ if(input.newPassword){
+  validatePassword(input.newPassword);
+  const salt=Array.from(crypto.getRandomValues(new Uint8Array(16)));
+  credentials={salt,verifier:await derivePassword(input.newPassword,salt,ITERATIONS),iterations:ITERATIONS};
+ }
+ const db=await openDatabase();
+ return new Promise((resolve,reject)=>{
+  const transaction=db.transaction('accounts','readwrite'),store=transaction.objectStore('accounts');
+  let next:AccountRecord|undefined,error='';
+  const request=store.get(id);
+  request.onsuccess=()=>{
+   const current=request.result as AccountRecord|undefined;
+   if(!current){error='This account no longer exists. Please log in again.';transaction.abort();return;}
+   if(current.email!==record.email||JSON.stringify(current.verifier)!==JSON.stringify(record.verifier)){
+    error='Your account changed in another tab. Reload this page before trying again.';transaction.abort();return;
+   }
+   next={...current,name,email,grade,...credentials};store.put(next);
+  };
+  transaction.oncomplete=()=>resolve(publicAccount(next!));
+  transaction.onabort=()=>reject(new Error(error||(transaction.error?.name==='ConstraintError'
+   ?'Another account on this device already uses that email. Choose a different email.'
+   :'Could not save your account details. Please try again.')));
+  transaction.onerror=()=>{};
+ });
 }
 
 export async function saveAccountPhoto(id:string,photo?:string):Promise<LocalAccount>{

@@ -1,14 +1,15 @@
 import {createContext,useContext,useEffect,useState,type ReactNode} from 'react';
-import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,type LocalAccount} from './repository';
+import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,saveAccountDetails,type AccountDetailsInput,type LocalAccount} from './repository';
 import {stopPlayback} from '../audio/playback';
 
 const SESSION='basabuddy:account-session';
 interface AccountContext {
  account:LocalAccount|null; ready:boolean; notice:string;
- signup:(input:{name:string;email:string;password:string;photo?:string})=>Promise<void>;
+ signup:(input:{name:string;email:string;password:string;grade?:string;photo?:string})=>Promise<void>;
  login:(email:string,password:string)=>Promise<void>;
  logout:()=>void;
  photo:(photo?:string)=>Promise<void>;
+ details:(input:AccountDetailsInput)=>Promise<LocalAccount>;
  remove:(password:string)=>Promise<void>;
 }
 const Context=createContext<AccountContext|null>(null);
@@ -47,6 +48,13 @@ export function AccountProvider({children}:{children:ReactNode}){
   login:async(email,password)=>{activate(await authenticate(email,password));},
   logout,
   photo:async value=>{if(!account)throw new Error('Log in before adding a photo.');const next=await saveAccountPhoto(account.id,value);setAccount(current=>current?.id===next.id?next:current);},
+  details:async input=>{
+   if(!account)throw new Error('Log in before editing your account.');
+   const next=await saveAccountDetails(account.id,input);
+   setAccount(current=>current?.id===next.id?next:current);
+   if(typeof BroadcastChannel!=='undefined'){const channel=new BroadcastChannel('basabuddy:account-events');channel.postMessage('updated');channel.close();}
+   return next;
+  },
   remove:async password=>{
    if(!account)throw new Error('Log in before deleting an account.');
    await deleteAccount(account.id,password);logout();

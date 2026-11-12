@@ -68,3 +68,7 @@
 .welcome-account-links{font-size:14px;text-align:center;color:#657cae}
 .welcome-account-links>a{font-weight:900;color:#087fff}
 @media(max-width:350px){.account-header h1{font-size:21px}.account-hero{gap:10px;padding:12px}.account-hero>.art{width:70px;height:70px}.account-hero .brand{font-size:25px}.account-hero h2{font-size:17px}.account-title{font-size:24px}}
+
+.account-field>select{width:100%;min-height:54px;padding:12px 14px;border:2px solid #c9e3ff;border-radius:16px;color:#17176d;background:#fff;font:inherit}
+.account-details{padding:20px 16px;border:1px solid #c9e3ff;border-radius:20px;margin:24px 0}
+.account-details>h2{font-size:22px;margin:0 0 20px}
