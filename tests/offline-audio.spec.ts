@@ -74,3 +74,33 @@ test('production worker activates changed image bytes in an open tab and keeps t
   await expect.poll(()=>page.evaluate(async()=> (await caches.keys()).filter(k=>k.startsWith('basabuddy-static-')).length)).toBe(1);
  }finally{await context.setOffline(false);await new Promise<void>(resolve=>server.close(()=>resolve()));await rm(root,{recursive:true,force:true});}
 });
+
+test('online signup navigation uses the new release while offline fallback preserves the installed pack and account data',async({page,context})=>{
+ const root=await mkdtemp(join(tmpdir(),'basabuddy-signup-cache-'));
+ const oldHtml='<!doctype html><title>Signup cache fixture</title><h1>Old signup</h1><script>navigator.serviceWorker.register("/sw.js",{updateViaCache:"none"})</script>';
+ await writeFile(join(root,'index.html'),oldHtml);
+ execFileSync(process.execPath,['scripts/build-offline.mjs',root]);
+ const server=createServer(async(req,res)=>{
+  const path=new URL(req.url!,'http://localhost').pathname;
+  try{
+   res.setHeader('Cache-Control','no-store');
+   if(path==='/sw.js'){res.setHeader('Content-Type','application/javascript');res.end(await readFile(join(root,'sw.js')));return;}
+   res.setHeader('Content-Type','text/html');
+   if(path!=='/'&&path!=='/index.html')res.statusCode=404;
+   res.end(await readFile(join(root,'index.html')));
+  }catch{res.statusCode=500;res.end();}
+ });
+ await new Promise<void>(resolve=>server.listen(0,'127.0.0.1',resolve));
+ const origin=`http://127.0.0.1:${(server.address() as {port:number}).port}`;
+ try{
+  await page.goto(origin);await page.evaluate(()=>navigator.serviceWorker.ready);
+  await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
+  await page.evaluate(()=>localStorage.setItem('account-data-fixture','keep my readers'));
+  // The old worker is still active, but the server now has the new signup page.
+  await writeFile(join(root,'index.html'),'<!doctype html><title>New signup</title><div id="root"><h1>Choose your role</h1><label><input type="radio" name="role">Student</label><label><input type="radio" name="role">Teacher</label></div>');
+  await page.goto(origin+'/signup');await expect(page.getByRole('heading',{name:'Choose your role'})).toBeVisible();await expect(page.getByRole('radio',{name:'Teacher'})).toBeVisible();
+  expect(await page.evaluate(()=>localStorage.getItem('account-data-fixture'))).toBe('keep my readers');
+  await context.setOffline(true);await page.reload();await expect(page.getByRole('heading',{name:'Old signup'})).toBeVisible();
+  expect(await page.evaluate(()=>localStorage.getItem('account-data-fixture'))).toBe('keep my readers');
+ }finally{await context.setOffline(false);server.closeAllConnections();await new Promise<void>(resolve=>server.close(()=>resolve()));await rm(root,{recursive:true,force:true});}
+});

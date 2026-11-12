@@ -72,3 +72,15 @@
 .account-field>select{width:100%;min-height:54px;padding:12px 14px;border:2px solid #c9e3ff;border-radius:16px;color:#17176d;background:#fff;font:inherit}
 .account-details{padding:20px 16px;border:1px solid #c9e3ff;border-radius:20px;margin:24px 0}
 .account-details>h2{font-size:22px;margin:0 0 20px}
+.account-role-picker{border:0;padding:0;margin:0;min-width:0}
+.account-role-picker>legend{font-size:16px;font-weight:900;margin-bottom:10px;padding:0}
+.account-role-picker>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.account-role-choice{position:relative;display:block!important;border:2px solid #c9e3ff;border-radius:18px;padding:18px 12px;cursor:pointer;background:#fff;text-align:center;min-width:0}
+.account-role-choice:has(input:checked){border-color:#087fff;background:#e5f5ff;box-shadow:0 0 0 1px #087fff}
+.account-role-choice:focus-within{outline:3px solid #f5ad13;outline-offset:3px}
+.account-role-choice>input{position:absolute;top:10px;right:10px;width:18px;height:18px;min-height:18px;margin:0;padding:0;accent-color:#087fff}
+.account-role-choice>span{display:flex;flex-direction:column;align-items:center;gap:5px}
+.account-role-choice svg{width:27px;height:27px;color:#087fff;margin-bottom:4px}
+.account-role-choice strong{font-size:17px;font-weight:900}
+.account-role-choice small{font-size:11px;line-height:1.4}
+.account-role-picker:disabled{opacity:.6}

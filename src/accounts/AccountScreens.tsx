@@ -18,8 +18,10 @@ function PasswordField({label='Password',value,onChange,autoComplete='current-pa
 function GradeField({value,onChange,disabled=false,label='Grade'}:{value:string;onChange:(value:string)=>void;disabled?:boolean;label?:string}){
  const id=useId();return <div className="account-field"><label htmlFor={id}>{label}</label><select id={id} value={value} onChange={e=>onChange(e.target.value)} disabled={disabled} required>{['1','2','3'].map(grade=><option key={grade} value={grade}>Grade {grade}</option>)}</select></div>;
 }
-function RoleField({value,onChange,disabled=false}:{value:AccountRole;onChange:(value:AccountRole)=>void;disabled?:boolean}){
- const id=useId();return <div className="account-field"><label htmlFor={id}>Role</label><select id={id} value={value} onChange={event=>onChange(event.target.value as AccountRole)} disabled={disabled} required><option value="student">Student</option><option value="teacher">Teacher</option></select></div>;
+function RoleField({value,onChange,disabled=false,prominent=false}:{value:AccountRole;onChange:(value:AccountRole)=>void;disabled?:boolean;prominent?:boolean}){
+ const id=useId();
+ if(prominent)return <fieldset className="account-role-picker" disabled={disabled}><legend>Choose your role</legend><div>{(['student','teacher'] as const).map(role=><label className="account-role-choice" key={role}><input type="radio" name={id} value={role} checked={value===role} onChange={()=>onChange(role)} aria-label={role==='student'?'Student':'Teacher'} required/><span>{role==='student'?<UserRound aria-hidden="true"/>:<BookOpen aria-hidden="true"/>}<strong>{role==='student'?'Student':'Teacher'}</strong><small>{role==='student'?'Read, learn & play':'Guide your learners'}</small></span></label>)}</div></fieldset>;
+ return <div className="account-field"><label htmlFor={id}>Role</label><select id={id} value={value} onChange={event=>onChange(event.target.value as AccountRole)} disabled={disabled} required><option value="student">Student</option><option value="teacher">Teacher</option></select></div>;
 }
 const accountEntry=(role:AccountRole,creating:boolean)=>role==='teacher'?'/adult/teacher':creating?'/language':'/student/home';
 
@@ -56,10 +58,10 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){
  }
  return <section className="account-screen"><AuthHeader title={creating?'Join BasaBuddy':'Welcome back'}/><AuthHero signup={creating}/><h2 className="account-title">{creating?'Create your account':'Log in to your account'}</h2><p className="account-local"><ShieldCheck size={16}/> Saved only on this device</p>
   <form className="account-form" onSubmit={event=>void submit(event)}>
+   {creating&&<RoleField value={role} onChange={setRole} disabled={busy} prominent/>}
    {creating&&<PhotoPicker photo={photo} onChange={setPhoto} disabled={busy} onBusy={setPhotoBusy}/>}
    {creating&&<div className="account-field"><label htmlFor="account-name">Your name</label><div className="account-input"><UserRound aria-hidden="true"/><input id="account-name" value={name} onChange={e=>setName(e.target.value)} autoComplete="nickname" required maxLength={50} placeholder="What should we call you?" disabled={busy}/></div></div>}
    {creating&&<GradeField value={grade} onChange={setGrade} disabled={busy}/>}
-   {creating&&<RoleField value={role} onChange={setRole} disabled={busy}/>}
    <div className="account-field"><label htmlFor="account-email">Account email</label><div className="account-input"><Mail aria-hidden="true"/><input id="account-email" type="email" value={email} onChange={e=>setEmail(e.target.value)} autoComplete="email" required maxLength={254} placeholder="you@example.com" disabled={busy}/></div></div>
    <PasswordField value={password} onChange={setPassword} autoComplete={creating?'new-password':'current-password'} disabled={busy}/>
    {creating&&<><small className="password-help">Use at least 8 characters. Keep your password somewhere safe.</small><PasswordField label="Confirm password" value={confirm} onChange={setConfirm} autoComplete="new-password" disabled={busy}/></>}

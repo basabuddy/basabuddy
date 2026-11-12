@@ -31,7 +31,7 @@ cross-device sync, or a secure boundary against someone with access to browser
 data. Clearing site storage removes the accounts. The interface states these
 device-only limits; no email is sent and no cloud authentication is implied.
 
-Verification: twelve account browser scenarios cover session restoration, salted
+Verification: thirteen account browser scenarios cover session restoration, salted
 password verification, profile-photo persistence and validation, account data
 isolation, deletion confirmation and preservation of other users, plus layouts
 at 320, 393, 768 and 1440 pixels. Existing unit and reader-role tests also pass.
@@ -41,3 +41,5 @@ Account details have an explicit Save button. Email and password changes require
 Student sign-up automatically creates and selects the first reader using the account name and grade, then opens language selection. Student login opens the active reader’s home directly. Session restoration and login also initialize older accounts with no reader; repeated visits preserve existing readers, active selection, and progress. Additional readers remain optional through Choose a reader. Guest onboarding remains available.
 
 Role can be selected at sign-up or saved in Account details. Existing accounts without a role default to Student. Teacher accounts open the existing PIN-protected teacher area on signup/login and do not automatically create a child reader. Switching back to Student initializes a reader if needed. Role changes preserve existing readers, progress, and the teacher PIN. Teacher screens also link to account settings. Account email labels apply to both roles.
+
+Sign-up presents Student and Teacher as visible selection cards before the photo and account fields. Production navigation requests the current HTML release online, with a four-second fallback to the coherent installed offline pack. GitHub Pages custom-404 app routes are supported. Cache updates never clear IndexedDB, account sessions, or reading progress.

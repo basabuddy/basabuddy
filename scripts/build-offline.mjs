@@ -32,6 +32,20 @@ self.addEventListener('fetch',event=>{
  if(request.mode!=='navigate'&&!FILES.includes(url.pathname))return;
  event.respondWith((async()=>{
   const cache=await caches.open(CACHE);
+  // Show the latest release online instead of keeping visitors on an old signup form.
+  // Leave the installed offline pack intact until its matching worker updates.
+  if(request.mode==='navigate'){
+   const controller=new AbortController();
+   const deadline=setTimeout(()=>controller.abort(),4000);
+   try{
+    const response=await fetch(new Request(request,{cache:'no-cache',signal:controller.signal}));
+    const html=(response.headers.get('Content-Type')||'').includes('text/html');
+    if(response.ok&&html)return response;
+    // GitHub Pages serves the compiled SPA through its custom 404 for deep links.
+    if(response.status===404&&html&&(await response.clone().text()).includes('id="root"'))return response;
+   }catch{/* Use the coherent installed release while offline or on a slow connection. */}
+   finally{clearTimeout(deadline);}
+  }
   // Never answer a new image revision with bytes from an older release.
   const revision=url.searchParams.get('v');
   if(revision&&IMAGE_REVISIONS[url.pathname]&&revision!==IMAGE_REVISIONS[url.pathname])return fetch(request);

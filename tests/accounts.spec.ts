@@ -196,7 +196,7 @@ test('account role saves, survives login, preserves reading data, and retains th
 });
 
 test('teacher signup opens the PIN gate and switching to Student automatically sets up the reader',async({page})=>{
- await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Teacher Sam');await page.getByLabel('Grade',{exact:true}).selectOption('3');await page.getByLabel('Role',{exact:true}).selectOption('teacher');
+ await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Teacher Sam');await page.getByLabel('Grade',{exact:true}).selectOption('3');await page.getByRole('radio',{name:'Teacher',exact:true}).check();
  await page.getByLabel('Account email',{exact:true}).fill('teacher@example.com');await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page).toHaveURL(/\/adult\/teacher$/);await expect(page.getByLabel('Teacher PIN',{exact:true})).toBeVisible();
  const initial=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)??'{"profiles":[]}');});expect(initial.profiles).toHaveLength(0);
@@ -204,4 +204,16 @@ test('teacher signup opens the PIN gate and switching to Student automatically s
  await details.getByLabel('Role',{exact:true}).selectOption('student');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
  await logout(page);await login(page,'teacher@example.com');await expect(page).toHaveURL(/\/student\/home$/);
  const reader=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)!);});expect(reader.profiles).toHaveLength(1);expect(reader.profiles[0].name).toBe('Teacher Sam');expect(reader.profiles[0].grade).toBe('3');
+});
+
+test('signup displays both role choices prominently before account fields on a phone',async({page})=>{
+ await page.setViewportSize({width:393,height:852});await page.goto('/signup');
+ const roles=page.getByRole('group',{name:'Choose your role',exact:true});
+ await expect(roles.getByRole('radio',{name:'Student',exact:true})).toBeChecked();
+ await expect(roles.getByRole('radio',{name:'Student',exact:true})).toBeInViewport();
+ await expect(roles.getByRole('radio',{name:'Teacher',exact:true})).toBeInViewport();
+ await roles.getByRole('radio',{name:'Teacher',exact:true}).check();await expect(roles.getByRole('radio',{name:'Teacher',exact:true})).toBeChecked();
+ await expect(roles.getByRole('radio',{name:'Student',exact:true})).not.toBeChecked();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:'test-results/signup-visible-roles.png',fullPage:true});
 });
