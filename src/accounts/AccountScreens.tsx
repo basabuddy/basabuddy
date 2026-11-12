@@ -6,6 +6,8 @@ import {Art} from '../components/UI';
 import {useAccount} from './context';
 import {preparePhoto} from './photo';
 import {useApp} from '../app/context';
+import type {AccountRole} from './repository';
+import {withAccountReader} from './reader';
 
 function AuthHeader({title}:{title:string}){return <header className="account-header"><Link to="/welcome" aria-label="Back to welcome"><ArrowLeft/></Link><h1>{title}</h1><Art name="mascots/welcome-original" alt=""/></header>;}
 function AuthHero({signup=false}:{signup?:boolean}){return <div className="account-hero"><Art name="mascots/welcome-original" alt="Blue owl reading a book" priority/><div><span className="brand">Basa<span>Buddy</span></span><h2>{signup?'A little account. A big reading journey!':'More reading adventures await!'}</h2></div></div>;}
@@ -16,6 +18,10 @@ function PasswordField({label='Password',value,onChange,autoComplete='current-pa
 function GradeField({value,onChange,disabled=false,label='Grade'}:{value:string;onChange:(value:string)=>void;disabled?:boolean;label?:string}){
  const id=useId();return <div className="account-field"><label htmlFor={id}>{label}</label><select id={id} value={value} onChange={e=>onChange(e.target.value)} disabled={disabled} required>{['1','2','3'].map(grade=><option key={grade} value={grade}>Grade {grade}</option>)}</select></div>;
 }
+function RoleField({value,onChange,disabled=false}:{value:AccountRole;onChange:(value:AccountRole)=>void;disabled?:boolean}){
+ const id=useId();return <div className="account-field"><label htmlFor={id}>Role</label><select id={id} value={value} onChange={event=>onChange(event.target.value as AccountRole)} disabled={disabled} required><option value="student">Student</option><option value="teacher">Teacher</option></select></div>;
+}
+const accountEntry=(role:AccountRole,creating:boolean)=>role==='teacher'?'/adult/teacher':creating?'/language':'/student/home';
 
 function PhotoPicker({photo,onChange,disabled=false,onBusy}:{photo?:string;onChange:(value?:string)=>void|Promise<void>;disabled?:boolean;onBusy?:(busy:boolean)=>void}){
  const id=useId(),[busy,setBusy]=useState(false),[error,setError]=useState('');
@@ -34,25 +40,27 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){
  const creating=mode==='signup';
  const [name,setName]=useState(''),[email,setEmail]=useState(''),[password,setPassword]=useState(''),[confirm,setConfirm]=useState(''),[photo,setPhoto]=useState<string|undefined>();
  const [grade,setGrade]=useState('1');
+ const [role,setRole]=useState<AccountRole>('student');
  const [busy,setBusy]=useState(false),[photoBusy,setPhotoBusy]=useState(false),[error,setError]=useState(''),[help,setHelp]=useState(false);
  const errorRef=useRef<HTMLParagraphElement>(null);
- if(account)return <Navigate to={creating?'/language':'/student/home'} replace/>;
+ if(account)return <Navigate to={accountEntry(account.role,creating)} replace/>;
  async function submit(event:FormEvent){
   event.preventDefault();if(busy||photoBusy)return;setError('');
   if(creating&&password!==confirm){setError('Your passwords do not match. Please enter them again.');return;}
   setBusy(true);
   try{
-   if(creating)await signup({name,email,password,photo,grade});else await login(email,password);
-   nav(creating?'/language':'/student/home',{replace:true});
+   const next=creating?await signup({name,email,password,photo,grade,role}):await login(email,password);
+   nav(accountEntry(next.role,creating),{replace:true});
   }catch(error){setError(error instanceof Error?error.message:'Could not open your account. Please try again.');requestAnimationFrame(()=>errorRef.current?.focus());}
   finally{setBusy(false);}
  }
- return <section className="account-screen"><AuthHeader title={creating?'Join BasaBuddy':'Welcome back'}/><AuthHero signup={creating}/><h2 className="account-title">{creating?'Create your parent account':'Log in to your parent account'}</h2><p className="account-local"><ShieldCheck size={16}/> Saved only on this device</p>
+ return <section className="account-screen"><AuthHeader title={creating?'Join BasaBuddy':'Welcome back'}/><AuthHero signup={creating}/><h2 className="account-title">{creating?'Create your account':'Log in to your account'}</h2><p className="account-local"><ShieldCheck size={16}/> Saved only on this device</p>
   <form className="account-form" onSubmit={event=>void submit(event)}>
    {creating&&<PhotoPicker photo={photo} onChange={setPhoto} disabled={busy} onBusy={setPhotoBusy}/>}
    {creating&&<div className="account-field"><label htmlFor="account-name">Your name</label><div className="account-input"><UserRound aria-hidden="true"/><input id="account-name" value={name} onChange={e=>setName(e.target.value)} autoComplete="nickname" required maxLength={50} placeholder="What should we call you?" disabled={busy}/></div></div>}
    {creating&&<GradeField value={grade} onChange={setGrade} disabled={busy}/>}
-   <div className="account-field"><label htmlFor="account-email">Parent email</label><div className="account-input"><Mail aria-hidden="true"/><input id="account-email" type="email" value={email} onChange={e=>setEmail(e.target.value)} autoComplete="email" required maxLength={254} placeholder="parent@example.com" disabled={busy}/></div></div>
+   {creating&&<RoleField value={role} onChange={setRole} disabled={busy}/>}
+   <div className="account-field"><label htmlFor="account-email">Account email</label><div className="account-input"><Mail aria-hidden="true"/><input id="account-email" type="email" value={email} onChange={e=>setEmail(e.target.value)} autoComplete="email" required maxLength={254} placeholder="you@example.com" disabled={busy}/></div></div>
    <PasswordField value={password} onChange={setPassword} autoComplete={creating?'new-password':'current-password'} disabled={busy}/>
    {creating&&<><small className="password-help">Use at least 8 characters. Keep your password somewhere safe.</small><PasswordField label="Confirm password" value={confirm} onChange={setConfirm} autoComplete="new-password" disabled={busy}/></>}
    {(error||notice)&&<p ref={errorRef} tabIndex={-1} className="account-error" role="alert">{error||notice}</p>}
@@ -60,7 +68,7 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){
   </form>
   {!creating&&<><button className="text-button account-help" type="button" aria-expanded={help} onClick={()=>setHelp(!help)}>Need help logging in?</button>{help&&<p className="account-help-copy">Use the email and password you created in this browser. Device-only accounts cannot send password-reset emails. You can always continue as a guest.</p>}</>}
   <button className="account-guest" type="button" onClick={()=>{logout();nav('/roles');}} disabled={busy}><BookOpen/> Continue as a guest reader</button>
-  <p className="account-switch">{creating?'Already have an account?':'New here?'} <Link to={creating?'/login':'/signup'}>{creating?'Log in':'Create a parent account'}</Link></p>
+  <p className="account-switch">{creating?'Already have an account?':'New here?'} <Link to={creating?'/login':'/signup'}>{creating?'Log in':'Create an account'}</Link></p>
   <p className="account-footnote">Grown-ups handle account details. Little readers can explore as a guest.</p><p className="account-footnote">Accounts, photos, and progress stay in this browser. They do not sync to other devices, and clearing site data removes them.</p>
  </section>;
 }
@@ -68,27 +76,30 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){
 function AccountDetails({disabled,onBusy}:{disabled:boolean;onBusy:(value:boolean)=>void}){
  const {account,details}=useAccount(),{update}=useApp();
  const [name,setName]=useState(account!.name),[email,setEmail]=useState(account!.email),[grade,setGrade]=useState(account!.grade);
+ const [role,setRole]=useState<AccountRole>(account!.role);
  const [currentPassword,setCurrentPassword]=useState(''),[newPassword,setNewPassword]=useState(''),[confirm,setConfirm]=useState('');
  const [changingPassword,setChangingPassword]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState(''),[saved,setSaved]=useState('');
  const locked=disabled||busy;
  const needsPassword=changingPassword||email.trim().toLowerCase()!==account!.email;
- function reset(){setName(account!.name);setEmail(account!.email);setGrade(account!.grade);setCurrentPassword('');setNewPassword('');setConfirm('');setChangingPassword(false);setError('');setSaved('');}
+ function reset(){setName(account!.name);setEmail(account!.email);setGrade(account!.grade);setRole(account!.role);setCurrentPassword('');setNewPassword('');setConfirm('');setChangingPassword(false);setError('');setSaved('');}
  async function submit(event:FormEvent){
   event.preventDefault();if(locked)return;setError('');setSaved('');
   if(changingPassword&&newPassword!==confirm){setError('Your new passwords do not match.');return;}
   setBusy(true);onBusy(true);
   try{
    const previousName=account!.name;
-   const next=await details({name,email,grade,currentPassword:needsPassword?currentPassword:undefined,newPassword:changingPassword?newPassword:undefined});
-   update(data=>({...data,profiles:data.profiles.map((profile,index)=>index===0&&profile.name===previousName?{...profile,name:next.name,grade:next.grade}:profile)}));
-   setName(next.name);setEmail(next.email);setGrade(next.grade);setCurrentPassword('');setNewPassword('');setConfirm('');setChangingPassword(false);setSaved('Your account details are saved.');
+   const next=await details({name,email,grade,role,currentPassword:needsPassword?currentPassword:undefined,newPassword:changingPassword?newPassword:undefined});
+   update(data=>{const prepared=withAccountReader(data,next);return {...prepared,profiles:prepared.profiles.map((profile,index)=>next.role==='student'&&index===0&&profile.name===previousName?{...profile,name:next.name,grade:next.grade}:profile)};});
+   setName(next.name);setEmail(next.email);setGrade(next.grade);setRole(next.role);setCurrentPassword('');setNewPassword('');setConfirm('');setChangingPassword(false);setSaved('Your account details are saved.');
   }catch(error){setError(error instanceof Error?error.message:'Could not save your account details. Please try again.');}
   finally{setBusy(false);onBusy(false);}
  }
  return <section className="account-details" aria-labelledby="account-details-title"><h2 id="account-details-title">Account details</h2><form className="account-form" onSubmit={event=>void submit(event)}>
   <div className="account-field"><label htmlFor="edit-account-name">Your name</label><input id="edit-account-name" value={name} onChange={e=>{setName(e.target.value);setSaved('');}} autoComplete="nickname" maxLength={50} required disabled={locked}/></div>
-  <div className="account-field"><label htmlFor="edit-account-email">Parent email</label><input id="edit-account-email" type="email" value={email} onChange={e=>{setEmail(e.target.value);setSaved('');}} autoComplete="email" maxLength={254} required disabled={locked}/></div>
+  <div className="account-field"><label htmlFor="edit-account-email">Account email</label><input id="edit-account-email" type="email" value={email} onChange={e=>{setEmail(e.target.value);setSaved('');}} autoComplete="email" maxLength={254} required disabled={locked}/></div>
   <GradeField value={grade} onChange={value=>{setGrade(value);setSaved('');}} disabled={locked}/>
+  <RoleField value={role} onChange={value=>{setRole(value);setSaved('');}} disabled={locked}/>
+  <small>{role==='teacher'?'Teacher accounts open the teacher area when logging in. The teacher PIN is still required.':'Student accounts open the reading home when logging in.'}</small>
   <small>The first reader inherits this name and grade while it still uses your account name. Other readers keep their own details.</small>
   <button className="text-button" type="button" aria-expanded={changingPassword} disabled={locked} onClick={()=>{setChangingPassword(!changingPassword);setNewPassword('');setConfirm('');setSaved('');}}>Change password</button>
   {needsPassword&&<><PasswordField label="Current password" value={currentPassword} onChange={setCurrentPassword} disabled={locked}/><small>Confirm your current password to change your email or password.</small></>}
@@ -114,16 +125,17 @@ export function AccountScreen(){
  const [deleting,setDeleting]=useState(false),[password,setPassword]=useState(''),[confirmation,setConfirmation]=useState(''),[busy,setBusy]=useState(false),[photoBusy,setPhotoBusy]=useState(false),[error,setError]=useState(''),[saved,setSaved]=useState('');
  const [detailsBusy,setDetailsBusy]=useState(false);
  const confirmRef=useRef<HTMLInputElement>(null);
- if(!account)return <section className="account-screen"><AuthHeader title="Your account"/><AuthHero/><h2>Reading as a guest</h2><p>Create a parent account to keep your readers and profile photo together on this device.</p><Link className="primary account-link" to="/signup">Create account</Link><Link className="account-guest" to="/login">Log in</Link></section>;
+ if(!account)return <section className="account-screen"><AuthHeader title="Your account"/><AuthHero/><h2>Reading as a guest</h2><p>Create an account to keep your readers and profile photo together on this device.</p><Link className="primary account-link" to="/signup">Create account</Link><Link className="account-guest" to="/login">Log in</Link></section>;
  async function destroy(event:FormEvent){
   event.preventDefault();if(confirmation!=='DELETE'||busy||photoBusy||detailsBusy)return;setError('');setBusy(true);
   try{await remove(password);nav('/account-deleted',{replace:true});}
   catch(error){setError(error instanceof Error?error.message:'Could not delete your account. Try again.');}
   finally{setBusy(false);}
  }
- return <section className="account-screen"><AuthHeader title="Your account"/><div className="account-summary"><span className="account-eyebrow">YOUR READING CORNER</span><h2>Hello, {account.name}!</h2><p>{account.email}</p><p>Grade {account.grade}</p><span className="account-local"><ShieldCheck size={16}/> Device-only account</span></div>
+ return <section className="account-screen"><AuthHeader title="Your account"/><div className="account-summary"><span className="account-eyebrow">YOUR READING CORNER</span><h2>Hello, {account.name}!</h2><p>{account.email}</p><p>{account.role==='teacher'?'Teacher':'Student'} · Grade {account.grade}</p><span className="account-local"><ShieldCheck size={16}/> Device-only account</span></div>
   <PhotoPicker photo={account.photo} disabled={busy||detailsBusy} onBusy={setPhotoBusy} onChange={async value=>{await photo(value);setSaved(value?'Your profile photo is saved.':'Your profile photo was removed.');}}/>{saved&&<p role="status" className="account-success">{saved}</p>}
   <AccountDetails key={account.id} disabled={busy||photoBusy} onBusy={setDetailsBusy}/>
+  {account.role==='teacher'&&<Link className="primary account-link" to="/adult/teacher">Open teacher area</Link>}
   <Link className="primary account-link" to="/profiles">Choose a reader</Link>
   <button className="account-guest" type="button" disabled={busy||photoBusy||detailsBusy} onClick={()=>{logout();nav('/login',{replace:true});}}><LogOut/> Log out</button><p className="account-footnote">Logging out keeps this account’s readers and progress saved on this device. Log in again to continue.</p>
   <section className="account-danger" aria-labelledby="delete-title"><h2 id="delete-title">Delete account</h2><p>This removes your account, photo, readers, and their reading progress from this browser. It cannot be undone.</p>

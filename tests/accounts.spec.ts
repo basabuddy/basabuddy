@@ -5,7 +5,7 @@ const password='ReadingStars123!';
 async function signup(page:Page,email='parent@example.com',name='Parent Ana'){
  await page.goto('/signup');
  await page.getByLabel('Your name',{exact:true}).fill(name);
- await page.getByLabel('Parent email',{exact:true}).fill(email);
+ await page.getByLabel('Account email',{exact:true}).fill(email);
  await page.getByLabel('Password',{exact:true}).fill(password);
  await page.getByLabel('Confirm password',{exact:true}).fill(password);
  await page.getByRole('button',{name:'Create account',exact:true}).click();
@@ -17,7 +17,7 @@ async function signup(page:Page,email='parent@example.com',name='Parent Ana'){
 }
 async function login(page:Page,email='parent@example.com',pass=password){
  await page.goto('/login');
- await page.getByLabel('Parent email',{exact:true}).fill(email);
+ await page.getByLabel('Account email',{exact:true}).fill(email);
  await page.getByLabel('Password',{exact:true}).fill(pass);
  await page.getByRole('button',{name:'Log in',exact:true}).click();
 }
@@ -52,14 +52,14 @@ test('signup, profile photo, session reload, logout, login, and scoped progress 
 
 test('invalid credentials, duplicate email and mismatched passwords have useful errors',async({page})=>{
  await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Ana');
- await page.getByLabel('Parent email',{exact:true}).fill('parent@example.com');
+ await page.getByLabel('Account email',{exact:true}).fill('parent@example.com');
  await page.getByLabel('Password',{exact:true}).fill(password);
  await page.getByLabel('Confirm password',{exact:true}).fill('DifferentPassword');
  await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page.getByRole('alert')).toContainText('passwords do not match');
  await signup(page);await logout(page);
  await login(page,'parent@example.com','IncorrectPassword');await expect(page.getByRole('alert')).toContainText('Email or password is incorrect');
- await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Other name');await page.getByLabel('Parent email',{exact:true}).fill('PARENT@example.com');
+ await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Other name');await page.getByLabel('Account email',{exact:true}).fill('PARENT@example.com');
  await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page.getByRole('alert')).toContainText('already exists on this device');
 });
@@ -104,7 +104,7 @@ test('photo validation rejects unsafe and oversized files and signup photo persi
  const bytes=await readFile('public/assets/mascots/welcome-original.webp');
  await page.getByLabel('Choose profile photo').setInputFiles({name:'photo.webp',mimeType:'image/webp',buffer:bytes});
  await expect(page.getByRole('img',{name:'Your profile photo',exact:true})).toBeVisible();
- await page.getByLabel('Your name',{exact:true}).fill('Photo parent');await page.getByLabel('Parent email',{exact:true}).fill('photo@example.com');
+ await page.getByLabel('Your name',{exact:true}).fill('Photo parent');await page.getByLabel('Account email',{exact:true}).fill('photo@example.com');
  await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page).toHaveURL(/\/language$/);await page.goto('/account');await expect(page.getByRole('img',{name:'Your profile photo',exact:true})).toBeVisible();
 });
@@ -112,7 +112,7 @@ test('photo validation rejects unsafe and oversized files and signup photo persi
 test('account forms fit mobile and desktop and password visibility is accessible',async({page})=>{
  for(const width of [320,393,768,1440]){
   await page.setViewportSize({width,height:900});await page.goto('/login');
-  await expect(page.getByRole('heading',{name:'Log in to your parent account'})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'Log in to your account'})).toBeVisible();
   await page.getByRole('button',{name:'Show password',exact:true}).click();await expect(page.getByLabel('Password',{exact:true})).toHaveAttribute('type','text');
   await page.getByRole('button',{name:'Hide password',exact:true}).click();await expect(page.getByLabel('Password',{exact:true})).toHaveAttribute('type','password');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
@@ -123,16 +123,16 @@ test('account forms fit mobile and desktop and password visibility is accessible
 
 test('account details and grade can be edited, inherited by the first reader, and restored after login',async({page})=>{
  await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Original Name');await page.getByLabel('Grade',{exact:true}).selectOption('3');
- await page.getByLabel('Parent email',{exact:true}).fill('original@example.com');await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
+ await page.getByLabel('Account email',{exact:true}).fill('original@example.com');await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
  await expect(page).toHaveURL(/\/language$/);
  await expect(page.getByLabel('Nickname',{exact:true})).toHaveCount(0);
  const before=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)!);});
  await page.goto('/student/settings');await page.getByRole('link',{name:/Manage account & photo/}).click();
  const details=page.getByRole('region',{name:'Account details',exact:true});
- await details.getByLabel('Your name',{exact:true}).fill('Updated Name');await details.getByLabel('Grade',{exact:true}).selectOption('2');await details.getByLabel('Parent email',{exact:true}).fill('new@example.com');
+ await details.getByLabel('Your name',{exact:true}).fill('Updated Name');await details.getByLabel('Grade',{exact:true}).selectOption('2');await details.getByLabel('Account email',{exact:true}).fill('new@example.com');
  await details.getByLabel('Current password',{exact:true}).fill('WrongPassword');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('alert')).toContainText('correct current password');
  await details.getByLabel('Current password',{exact:true}).fill(password);await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
- await page.reload();await expect(page.getByRole('heading',{name:'Hello, Updated Name!'})).toBeVisible();await expect(details.getByLabel('Grade',{exact:true})).toHaveValue('2');await expect(details.getByLabel('Parent email',{exact:true})).toHaveValue('new@example.com');
+ await page.reload();await expect(page.getByRole('heading',{name:'Hello, Updated Name!'})).toBeVisible();await expect(details.getByLabel('Grade',{exact:true})).toHaveValue('2');await expect(details.getByLabel('Account email',{exact:true})).toHaveValue('new@example.com');
  await page.getByRole('link',{name:'Choose a reader',exact:true}).click();await expect(page.getByRole('button',{name:/Updated Name Grade 2/})).toBeVisible();
  const after=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)!);});
  expect(after.profiles[0].id).toBe(before.profiles[0].id);expect(after.progress).toEqual(before.progress);expect(after.activeId).toBe(before.activeId);
@@ -146,8 +146,8 @@ test('reader settings remain editable and account changes reject duplicate email
  await reader.getByLabel('Reader name',{exact:true}).fill('Edited reader');await reader.getByLabel('Reader grade',{exact:true}).selectOption('3');await reader.getByRole('button',{name:'Save reader details'}).click();await expect(reader.getByRole('status')).toHaveText('Your reader details are saved.');
  await page.reload();await expect(reader.getByLabel('Reader name',{exact:true})).toHaveValue('Edited reader');await expect(reader.getByLabel('Reader grade',{exact:true})).toHaveValue('3');
  await page.goto('/account');const details=page.getByRole('region',{name:'Account details',exact:true});
- await details.getByLabel('Parent email',{exact:true}).fill('used@example.com');await details.getByLabel('Current password',{exact:true}).fill(password);await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('alert')).toContainText('already uses that email');
- await details.getByRole('button',{name:'Cancel edits'}).click();await expect(details.getByLabel('Parent email',{exact:true})).toHaveValue('editable@example.com');
+ await details.getByLabel('Account email',{exact:true}).fill('used@example.com');await details.getByLabel('Current password',{exact:true}).fill(password);await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('alert')).toContainText('already uses that email');
+ await details.getByRole('button',{name:'Cancel edits'}).click();await expect(details.getByLabel('Account email',{exact:true})).toHaveValue('editable@example.com');
  await details.getByLabel('Your name',{exact:true}).fill('Renamed Parent');await details.getByLabel('Grade',{exact:true}).selectOption('2');await details.getByRole('button',{name:'Change password',exact:true}).click();
  await details.getByLabel('Current password',{exact:true}).fill(password);await details.getByLabel('New password',{exact:true}).fill('NewReadingPassword123!');await details.getByLabel('Confirm new password',{exact:true}).fill('NewReadingPassword123!');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
  await page.goto('/profiles');await expect(page.getByRole('button',{name:/Edited reader Grade 3/})).toBeVisible();
@@ -159,9 +159,10 @@ test('existing accounts without a grade remain usable and can save a grade',asyn
  await signup(page);
  await page.evaluate(async()=>{
   const db=await new Promise<IDBDatabase>((resolve,reject)=>{const request=indexedDB.open('basabuddy-accounts',1);request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});
-  await new Promise<void>((resolve,reject)=>{const transaction=db.transaction('accounts','readwrite'),store=transaction.objectStore('accounts');const request=store.get(sessionStorage.getItem('basabuddy:account-session')!);request.onsuccess=()=>{const record=request.result;delete record.grade;store.put(record);};transaction.oncomplete=()=>resolve();transaction.onabort=()=>reject(transaction.error);});db.close();
+  await new Promise<void>((resolve,reject)=>{const transaction=db.transaction('accounts','readwrite'),store=transaction.objectStore('accounts');const request=store.get(sessionStorage.getItem('basabuddy:account-session')!);request.onsuccess=()=>{const record=request.result;delete record.grade;delete record.role;store.put(record);};transaction.oncomplete=()=>resolve();transaction.onabort=()=>reject(transaction.error);});db.close();
  });
  await page.goto('/account');const details=page.getByRole('region',{name:'Account details',exact:true});await expect(details.getByLabel('Grade',{exact:true})).toHaveValue('1');
+ await expect(details.getByLabel('Role',{exact:true})).toHaveValue('student');
  await details.getByLabel('Grade',{exact:true}).selectOption('3');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
  await page.reload();await expect(details.getByLabel('Grade',{exact:true})).toHaveValue('3');
 });
@@ -178,4 +179,29 @@ test('older accounts get a reader automatically without duplicating existing rea
  const recovered=await read();expect(recovered.profiles).toHaveLength(1);expect(recovered.profiles[0].name).toBe('Automatic reader');
  await page.reload();await expect(page.getByRole('heading',{name:'Handa nang magbasa?'})).toBeVisible();expect((await read()).profiles).toHaveLength(1);
  expect(await page.evaluate(()=>localStorage.getItem('basabuddy:v1'))).toBe(guest);
+});
+
+test('account role saves, survives login, preserves reading data, and retains the teacher PIN gate',async({page})=>{
+ await signup(page);
+ const read=()=>page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)!);});
+ const before=await read();await page.goto('/account');const details=page.getByRole('region',{name:'Account details',exact:true});
+ await expect(details.getByLabel('Role',{exact:true})).toHaveValue('student');
+ await details.getByLabel('Role',{exact:true}).selectOption('teacher');await details.getByRole('button',{name:'Cancel edits'}).click();await expect(details.getByLabel('Role',{exact:true})).toHaveValue('student');
+ await details.getByLabel('Role',{exact:true}).selectOption('teacher');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
+ await page.reload();await expect(details.getByLabel('Role',{exact:true})).toHaveValue('teacher');expect((await read()).profiles).toEqual(before.profiles);expect((await read()).progress).toEqual(before.progress);
+ await logout(page);await login(page);await expect(page).toHaveURL(/\/adult\/teacher$/);await expect(page.getByLabel('Teacher PIN',{exact:true})).toBeVisible();await expect(page.getByRole('heading',{name:'Teacher Dashboard',exact:true,level:1})).toHaveCount(0);
+ await page.getByLabel('Teacher PIN',{exact:true}).fill('2468');await page.getByLabel('Confirm PIN',{exact:true}).fill('2468');await page.getByRole('button',{name:'Save PIN and continue'}).click();await expect(page.getByRole('heading',{name:'Teacher Dashboard',exact:true,level:1})).toBeVisible();
+ await page.getByRole('link',{name:/Manage account & photo/}).click();await details.getByLabel('Role',{exact:true}).selectOption('student');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
+ await logout(page);await login(page);await expect(page).toHaveURL(/\/student\/home$/);expect((await read()).profiles).toEqual(before.profiles);
+});
+
+test('teacher signup opens the PIN gate and switching to Student automatically sets up the reader',async({page})=>{
+ await page.goto('/signup');await page.getByLabel('Your name',{exact:true}).fill('Teacher Sam');await page.getByLabel('Grade',{exact:true}).selectOption('3');await page.getByLabel('Role',{exact:true}).selectOption('teacher');
+ await page.getByLabel('Account email',{exact:true}).fill('teacher@example.com');await page.getByLabel('Password',{exact:true}).fill(password);await page.getByLabel('Confirm password',{exact:true}).fill(password);await page.getByRole('button',{name:'Create account',exact:true}).click();
+ await expect(page).toHaveURL(/\/adult\/teacher$/);await expect(page.getByLabel('Teacher PIN',{exact:true})).toBeVisible();
+ const initial=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)??'{"profiles":[]}');});expect(initial.profiles).toHaveLength(0);
+ await page.getByRole('link',{name:/Manage account & photo/}).click();const details=page.getByRole('region',{name:'Account details',exact:true});await expect(details.getByLabel('Role',{exact:true})).toHaveValue('teacher');
+ await details.getByLabel('Role',{exact:true}).selectOption('student');await details.getByRole('button',{name:'Save account details'}).click();await expect(details.getByRole('status')).toHaveText('Your account details are saved.');
+ await logout(page);await login(page,'teacher@example.com');await expect(page).toHaveURL(/\/student\/home$/);
+ const reader=await page.evaluate(()=>{const id=sessionStorage.getItem('basabuddy:account-session');return JSON.parse(localStorage.getItem(`basabuddy:v1:account:${id}`)!);});expect(reader.profiles).toHaveLength(1);expect(reader.profiles[0].name).toBe('Teacher Sam');expect(reader.profiles[0].grade).toBe('3');
 });

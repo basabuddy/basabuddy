@@ -1,13 +1,13 @@
 import {createContext,useContext,useEffect,useState,type ReactNode} from 'react';
-import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,saveAccountDetails,type AccountDetailsInput,type LocalAccount} from './repository';
+import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,saveAccountDetails,type AccountDetailsInput,type AccountRole,type LocalAccount} from './repository';
 import {stopPlayback} from '../audio/playback';
 import {ensureAccountReader} from './reader';
 
 const SESSION='basabuddy:account-session';
 interface AccountContext {
  account:LocalAccount|null; ready:boolean; notice:string;
- signup:(input:{name:string;email:string;password:string;grade?:string;photo?:string})=>Promise<void>;
- login:(email:string,password:string)=>Promise<void>;
+ signup:(input:{name:string;email:string;password:string;grade?:string;role?:AccountRole;photo?:string})=>Promise<LocalAccount>;
+ login:(email:string,password:string)=>Promise<LocalAccount>;
  logout:()=>void;
  photo:(photo?:string)=>Promise<void>;
  details:(input:AccountDetailsInput)=>Promise<LocalAccount>;
@@ -45,8 +45,8 @@ export function AccountProvider({children}:{children:ReactNode}){
  function activate(next:LocalAccount){ensureAccountReader(next);sessionStorage.setItem(SESSION,next.id);stopPlayback();setNotice('');setAccount(next);}
  function logout(){sessionStorage.removeItem(SESSION);stopPlayback();setAccount(null);setNotice('');}
  return <Context.Provider value={{account,ready,notice,
-  signup:async input=>{activate(await createAccount(input));},
-  login:async(email,password)=>{activate(await authenticate(email,password));},
+  signup:async input=>{const next=await createAccount(input);activate(next);return next;},
+  login:async(email,password)=>{const next=await authenticate(email,password);activate(next);return next;},
   logout,
   photo:async value=>{if(!account)throw new Error('Log in before adding a photo.');const next=await saveAccountPhoto(account.id,value);setAccount(current=>current?.id===next.id?next:current);},
   details:async input=>{

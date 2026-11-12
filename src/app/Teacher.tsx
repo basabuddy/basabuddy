@@ -1,3 +1,4 @@
+import {AccountLink} from '../accounts/AccountScreens';
 import {useState} from 'react';
 import {useApp} from './context';
 import {DictionaryPanel} from '../dictionary/Dictionary';
@@ -37,7 +38,7 @@ export function Teacher(){
  }
 
  if(!allowed)return <>
-  <Header title="Teacher area" back="/roles"/>
+  <Header title="Teacher area" back="/roles"/><AccountLink/>
   <Art name="teacher" className="hero-art"/>
   <h2>{data.teacherPinHash?'Enter your teacher PIN':'Set a teacher PIN'}</h2>
   <p>This local MVP shows only learners saved in this browser. The teacher PIN is a device-local gate, not cloud authentication.</p>
@@ -60,7 +61,7 @@ export function Teacher(){
   setTimeout(()=>URL.revokeObjectURL(url),1000);setMessage('Learner data exported.');
  }
  return <>
-  <Header title="Teacher Dashboard" back="/roles"/>
+  <Header title="Teacher Dashboard" back="/roles"/><AccountLink/>
   <div className="teacher-intro"><div><small className="blue">BasaBuddy Classroom</small><h2>Teacher Dashboard</h2><small>Local learners · No school roster connected</small></div><Art name="teacher"/></div>
   <div className="teacher-tabs">{['overview','students','assign','reports','vocabulary'].map(t=><button className={tab===t?'active':''} key={t} onClick={()=>{setTab(t);setMessage('');}}>{t}</button>)}</div>
   {message&&<p className="feedback correct" role="status">{message}</p>}
