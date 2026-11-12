@@ -36,14 +36,14 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){
  const [grade,setGrade]=useState('1');
  const [busy,setBusy]=useState(false),[photoBusy,setPhotoBusy]=useState(false),[error,setError]=useState(''),[help,setHelp]=useState(false);
  const errorRef=useRef<HTMLParagraphElement>(null);
- if(account)return <Navigate to="/profiles" replace/>;
+ if(account)return <Navigate to={creating?'/language':'/student/home'} replace/>;
  async function submit(event:FormEvent){
   event.preventDefault();if(busy||photoBusy)return;setError('');
   if(creating&&password!==confirm){setError('Your passwords do not match. Please enter them again.');return;}
   setBusy(true);
   try{
    if(creating)await signup({name,email,password,photo,grade});else await login(email,password);
-   nav('/profiles',{replace:true});
+   nav(creating?'/language':'/student/home',{replace:true});
   }catch(error){setError(error instanceof Error?error.message:'Could not open your account. Please try again.');requestAnimationFrame(()=>errorRef.current?.focus());}
   finally{setBusy(false);}
  }

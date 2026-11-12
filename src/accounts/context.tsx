@@ -1,6 +1,7 @@
 import {createContext,useContext,useEffect,useState,type ReactNode} from 'react';
 import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,saveAccountDetails,type AccountDetailsInput,type LocalAccount} from './repository';
 import {stopPlayback} from '../audio/playback';
+import {ensureAccountReader} from './reader';
 
 const SESSION='basabuddy:account-session';
 interface AccountContext {
@@ -22,7 +23,7 @@ export function AccountProvider({children}:{children:ReactNode}){
   void(async()=>{
    try{
     const id=sessionStorage.getItem(SESSION);
-    if(id){const restored=await findAccount(id);if(active)setAccount(restored??null);if(!restored)sessionStorage.removeItem(SESSION);}
+    if(id){const restored=await findAccount(id);if(restored)ensureAccountReader(restored);if(active)setAccount(restored??null);if(!restored)sessionStorage.removeItem(SESSION);}
    }catch{if(active)setNotice('Your account could not be restored. Guest reading is still available.');}
    finally{if(active)setReady(true);}
   })();
@@ -41,7 +42,7 @@ export function AccountProvider({children}:{children:ReactNode}){
   if(channel)channel.onmessage=refresh;
   return()=>{active=false;window.removeEventListener('focus',refresh);channel?.close();};
  },[account?.id]);
- function activate(next:LocalAccount){sessionStorage.setItem(SESSION,next.id);stopPlayback();setNotice('');setAccount(next);}
+ function activate(next:LocalAccount){ensureAccountReader(next);sessionStorage.setItem(SESSION,next.id);stopPlayback();setNotice('');setAccount(next);}
  function logout(){sessionStorage.removeItem(SESSION);stopPlayback();setAccount(null);setNotice('');}
  return <Context.Provider value={{account,ready,notice,
   signup:async input=>{activate(await createAccount(input));},
