@@ -59,7 +59,7 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){const t=useTranslatio
   }catch(error){setError(error instanceof Error?error.message:'Could not open your account. Please try again.');requestAnimationFrame(()=>errorRef.current?.focus());}
   finally{setBusy(false);}
  }
- return <section className="account-screen"><AuthHeader title={creating?t("Join BasaBuddy"):t("Welcome back")}/><AccountLanguage/><AuthHero signup={creating}/><h2 className="account-title">{creating?t("Create your account"):t("Log in to your account")}</h2><p className="account-local"><ShieldCheck size={16}/>{t(" Saved only on this device")}</p>
+ return <section className="account-screen"><AuthHeader title={creating?t("Join BasaBuddy"):t("Welcome back")}/><AccountLanguage/><AuthHero signup={creating}/><h2 className="account-title">{creating?t("Create your account"):t("Log in to your account")}</h2>
   <form className="account-form" onSubmit={event=>void submit(event)}>
    {creating&&<RoleField value={role} onChange={setRole} disabled={busy} prominent/>}
    {creating&&<PhotoPicker photo={photo} onChange={setPhoto} disabled={busy} onBusy={setPhotoBusy}/>}
@@ -74,7 +74,6 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){const t=useTranslatio
   {!creating&&<><button className="text-button account-help" type="button" aria-expanded={help} onClick={()=>setHelp(!help)}>{t("Need help logging in?")}</button>{help&&<p className="account-help-copy">{t("Use the email and password you created in this browser. Device-only accounts cannot send password-reset emails. You can always continue as a guest.")}</p>}</>}
   <button className="account-guest" type="button" onClick={()=>{logout();nav('/roles');}} disabled={busy}><BookOpen/>{t(" Continue as a guest reader")}</button>
   <p className="account-switch">{creating?t("Already have an account?"):t("New here?")} <Link to={creating?'/login':'/signup'}>{creating?t("Log in"):t("Create an account")}</Link></p>
-  <p className="account-footnote">{t("Grown-ups handle account details. Little readers can explore as a guest.")}</p><p className="account-footnote">{t("Accounts, photos, and progress stay in this browser. They do not sync to other devices, and clearing site data removes them.")}</p>
  </section>;
 }
 
