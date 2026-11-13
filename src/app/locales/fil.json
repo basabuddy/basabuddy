@@ -558,5 +558,6 @@
   "The password is incorrect. Your account has not been deleted.": "Hindi tama ang password. Hindi nabura ang iyong account.",
   "Could not finish deleting the account. Please try again.": "Hindi matapos ang pagbura sa account. Pakisubukang muli.",
   "Tunog: off": "Patay ang tunog",
-  "Tunog: on": "Bukas ang tunog"
+  "Tunog: on": "Bukas ang tunog",
+  "Interface language": "Wika ng interface"
 }

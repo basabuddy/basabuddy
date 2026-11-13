@@ -62,3 +62,21 @@ test('Filipino covers dictionary dialogs, teacher controls, and secondary screen
  await expect(page.getByRole('button',{name:'Magtalaga ng aralin',exact:true})).toBeVisible();
  expect(errors).toEqual([]);
 });
+
+test('welcome page offers interface language before onboarding',async({page})=>{
+ await page.goto('/welcome');
+ const picker=page.getByRole('group',{name:'Wika ng interface'});
+ await expect(picker).toBeVisible();
+ await expect(picker.getByRole('button',{name:'Filipino',exact:true})).toHaveAttribute('aria-pressed','true');
+ await picker.getByRole('button',{name:'Ingles',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Little Steps. Big Reading Adventures.'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Get Started',exact:true})).toBeVisible();
+ await page.reload();
+ await expect(page.getByRole('group',{name:'Interface language'}).getByRole('button',{name:'English',exact:true})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:'Get Started',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Who are you?'})).toBeVisible();
+ await page.goto('/welcome');
+ await page.getByRole('button',{name:'Filipino',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Magsimula',exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Gumawa ng account',exact:true})).toBeVisible();
+});
