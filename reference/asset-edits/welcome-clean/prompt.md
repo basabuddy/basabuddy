@@ -1,0 +1,6 @@
+# Welcome owl restoration
+
+Tool: built-in image_gen, edit of the previous welcome-original.webp.
+
+Final prompt:
+Edit and restore this exact BasaBuddy welcome mascot image for a children's reading app. Preserve the same friendly blue baby owl character, large warm brown eyes and highlights, white face, pink cheeks, happy yellow beak, navy blue graduation cap with yellow star and tassel, small backpack strap, blue book with gold star, sky blue background with soft white clouds and green landscape, composition and close-up framing. Improve image fidelity substantially: crisply defined smooth contours, clean natural anti-aliasing, finely rendered smooth 3D cartoon shading, clear eyes and book details, no blur, no jaggies, no compression artifacts, no fuzzy halos. MOST IMPORTANT: remove the baked-in uneven white rounded corner cutouts entirely. Make this a full rectangular image with the illustrated sky/background extending cleanly to every outer edge and all four corners. No border, no white corner wedges, no pre-rounded corners, no frame, no transparency. The app will apply its own rounded clipping. Keep the original proportions approximately 703:653, high resolution around 2048 pixels. Do not redesign the mascot or add text.

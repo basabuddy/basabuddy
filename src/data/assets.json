@@ -610,11 +610,11 @@
   },
   "mascots/welcome-original": {
     "src": "/assets/mascots/welcome-original.webp",
-    "width": 2048,
-    "height": 1902,
-    "bytes": 1293980,
-    "source": "reference/asset-edits/enhanced-batches/mascots/welcome-original.webp",
-    "status": "User-supplied Batch 1 enhancement; upscaled source, not recovered original detail",
-    "revision": "a0db4ca118900d03"
+    "width": 1301,
+    "height": 1209,
+    "bytes": 234776,
+    "source": "reference/asset-edits/welcome-clean/welcome-original.png",
+    "status": "AI-restored mascot; crisp details and full rectangular background; rounded corners applied in CSS",
+    "revision": "8abe55e9dd9aeff8"
   }
 }
