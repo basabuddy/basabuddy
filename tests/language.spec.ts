@@ -80,3 +80,25 @@ test('welcome page offers interface language before onboarding',async({page})=>{
  await expect(page.getByRole('button',{name:'Magsimula',exact:true})).toBeVisible();
  await expect(page.getByRole('link',{name:'Gumawa ng account',exact:true})).toBeVisible();
 });
+
+test('signup and account settings offer language selection and keep the signup choice',async({page})=>{
+ await page.goto('/signup');
+ await page.getByRole('group',{name:'Wika ng interface'}).getByRole('button',{name:'Ingles',exact:true}).click();
+ await page.getByLabel('Your name',{exact:true}).fill('Luna');
+ await page.getByLabel('Account email',{exact:true}).fill('language-account@example.com');
+ await page.getByLabel('Password',{exact:true}).fill('ReadingStars123!');
+ await page.getByLabel('Confirm password',{exact:true}).fill('ReadingStars123!');
+ await page.getByRole('button',{name:'Create account',exact:true}).click();
+ await expect(page).toHaveURL(/\/language$/);
+ await expect(page.getByRole('button',{name:'Continue',exact:true})).toBeVisible();
+ await page.goto('/account');
+ await expect(page.getByRole('heading',{name:'Interface language',exact:true})).toBeVisible();
+ await page.getByRole('group',{name:'Interface language'}).getByRole('button',{name:'Filipino',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Iyong account',exact:true})).toBeVisible();
+ await expect(page.getByLabel('Iyong pangalan',{exact:true})).toHaveValue('Luna');
+ await page.reload();
+ await expect(page.getByRole('group',{name:'Wika ng interface'}).getByRole('button',{name:'Filipino',exact:true})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('group',{name:'Wika ng interface'}).getByRole('button',{name:'Ingles',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Your account',exact:true})).toBeVisible();
+ await expect(page.getByLabel('Your name',{exact:true})).toHaveValue('Luna');
+});

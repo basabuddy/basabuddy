@@ -3,7 +3,7 @@ import './accounts.css';
 import {useId,useRef,useState,type FormEvent} from 'react';
 import {Link,Navigate,useNavigate} from 'react-router-dom';
 import {ArrowLeft,BookOpen,Camera,Eye,EyeOff,LockKeyhole,LogOut,Mail,ShieldCheck,Trash2,UserRound} from 'lucide-react';
-import {Art} from '../components/UI';
+import {Art,LanguageSwitch} from '../components/UI';
 import {useAccount} from './context';
 import {preparePhoto} from './photo';
 import {useApp} from '../app/context';
@@ -11,6 +11,7 @@ import type {AccountRole} from './repository';
 import {withAccountReader} from './reader';
 
 function AuthHeader({title}:{title:string}){const t=useTranslation();return <header className="account-header"><Link to="/welcome" aria-label={t("Back to welcome")}><ArrowLeft/></Link><h1>{t(title)}</h1><Art name="mascots/welcome-original" alt=""/></header>;}
+function AccountLanguage(){const t=useTranslation();return <section className="account-language"><h2>{t("Interface language")}</h2><LanguageSwitch label="Interface language"/></section>;}
 function AuthHero({signup=false}:{signup?:boolean}){const t=useTranslation();return <div className="account-hero"><Art name="mascots/welcome-original" alt={t("Blue owl reading a book")} priority/><div><span className="brand">{t("Basa")}<span>{t("Buddy")}</span></span><h2>{signup?t("A little account. A big reading journey!"):t("More reading adventures await!")}</h2></div></div>;}
 function PasswordField({label='Password',value,onChange,autoComplete='current-password',disabled=false}:{label?:string;value:string;onChange:(value:string)=>void;autoComplete?:string;disabled?:boolean}){const t=useTranslation();
  const id=useId(),[visible,setVisible]=useState(false);
@@ -40,6 +41,7 @@ function PhotoPicker({photo,onChange,disabled=false,onBusy}:{photo?:string;onCha
 
 export function AuthScreen({mode}:{mode:'signup'|'login'}){const t=useTranslation();
  const {account,signup,login,logout,notice}=useAccount(),nav=useNavigate();
+ const {data}=useApp();
  const creating=mode==='signup';
  const [name,setName]=useState(''),[email,setEmail]=useState(''),[password,setPassword]=useState(''),[confirm,setConfirm]=useState(''),[photo,setPhoto]=useState<string|undefined>();
  const [grade,setGrade]=useState('1');
@@ -52,12 +54,12 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){const t=useTranslatio
   if(creating&&password!==confirm){setError('Your passwords do not match. Please enter them again.');return;}
   setBusy(true);
   try{
-   const next=creating?await signup({name,email,password,photo,grade,role}):await login(email,password);
+   const next=creating?await signup({name,email,password,photo,grade,role,language:data.language}):await login(email,password);
    nav(accountEntry(next.role,creating),{replace:true});
   }catch(error){setError(error instanceof Error?error.message:'Could not open your account. Please try again.');requestAnimationFrame(()=>errorRef.current?.focus());}
   finally{setBusy(false);}
  }
- return <section className="account-screen"><AuthHeader title={creating?t("Join BasaBuddy"):t("Welcome back")}/><AuthHero signup={creating}/><h2 className="account-title">{creating?t("Create your account"):t("Log in to your account")}</h2><p className="account-local"><ShieldCheck size={16}/>{t(" Saved only on this device")}</p>
+ return <section className="account-screen"><AuthHeader title={creating?t("Join BasaBuddy"):t("Welcome back")}/><AccountLanguage/><AuthHero signup={creating}/><h2 className="account-title">{creating?t("Create your account"):t("Log in to your account")}</h2><p className="account-local"><ShieldCheck size={16}/>{t(" Saved only on this device")}</p>
   <form className="account-form" onSubmit={event=>void submit(event)}>
    {creating&&<RoleField value={role} onChange={setRole} disabled={busy} prominent/>}
    {creating&&<PhotoPicker photo={photo} onChange={setPhoto} disabled={busy} onBusy={setPhotoBusy}/>}
@@ -66,7 +68,7 @@ export function AuthScreen({mode}:{mode:'signup'|'login'}){const t=useTranslatio
    <div className="account-field"><label htmlFor="account-email">{t("Account email")}</label><div className="account-input"><Mail aria-hidden="true"/><input id="account-email" type="email" value={email} onChange={e=>setEmail(e.target.value)} autoComplete="email" required maxLength={254} placeholder={t("you@example.com")} disabled={busy}/></div></div>
    <PasswordField value={password} onChange={setPassword} autoComplete={creating?'new-password':'current-password'} disabled={busy}/>
    {creating&&<><small className="password-help">{t("Use at least 8 characters. Keep your password somewhere safe.")}</small><PasswordField label={t("Confirm password")} value={confirm} onChange={setConfirm} autoComplete="new-password" disabled={busy}/></>}
-   {(error||notice)&&<p ref={errorRef} tabIndex={-1} className="account-error" role="alert">{error||t(notice)}</p>}
+   {(error||notice)&&<p ref={errorRef} tabIndex={-1} className="account-error" role="alert">{t(error||notice)}</p>}
    <button type="submit" className="primary account-submit" disabled={busy||photoBusy}>{busy?t("Please wait…"):creating?t("Create account"):t("Log in")}</button>
   </form>
   {!creating&&<><button className="text-button account-help" type="button" aria-expanded={help} onClick={()=>setHelp(!help)}>{t("Need help logging in?")}</button>{help&&<p className="account-help-copy">{t("Use the email and password you created in this browser. Device-only accounts cannot send password-reset emails. You can always continue as a guest.")}</p>}</>}
@@ -135,7 +137,7 @@ export function AccountScreen(){const t=useTranslation();
   catch(error){setError(error instanceof Error?error.message:'Could not delete your account. Try again.');}
   finally{setBusy(false);}
  }
- return <section className="account-screen"><AuthHeader title={t("Your account")}/><div className="account-summary"><span className="account-eyebrow">{t("YOUR READING CORNER")}</span><h2>{t("Hello, ")}{account.name}!</h2><p>{account.email}</p><p>{account.role==='teacher'?t("Teacher"):t("Student")}{t(" · Grade ")}{account.grade}</p><span className="account-local"><ShieldCheck size={16}/>{t(" Device-only account")}</span></div>
+ return <section className="account-screen"><AuthHeader title={t("Your account")}/><AccountLanguage/><div className="account-summary"><span className="account-eyebrow">{t("YOUR READING CORNER")}</span><h2>{t("Hello, ")}{account.name}!</h2><p>{account.email}</p><p>{account.role==='teacher'?t("Teacher"):t("Student")}{t(" · Grade ")}{account.grade}</p><span className="account-local"><ShieldCheck size={16}/>{t(" Device-only account")}</span></div>
   <PhotoPicker photo={account.photo} disabled={busy||detailsBusy} onBusy={setPhotoBusy} onChange={async value=>{await photo(value);setSaved(value?'Your profile photo is saved.':'Your profile photo was removed.');}}/>{saved&&<p role="status" className="account-success">{t(saved)}</p>}
   <AccountDetails key={account.id} disabled={busy||photoBusy} onBusy={setDetailsBusy}/>
   {account.role==='teacher'&&<Link className="primary account-link" to="/adult/teacher">{t("Open teacher area")}</Link>}

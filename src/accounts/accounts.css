@@ -84,3 +84,5 @@
 .account-role-choice strong{font-size:17px;font-weight:900}
 .account-role-choice small{font-size:11px;line-height:1.4}
 .account-role-picker:disabled{opacity:.6}
+
+.account-language{margin:0 0 24px}.account-language h2{font-size:16px;margin:0 0 10px}.account-language .language{margin:0;max-width:none}

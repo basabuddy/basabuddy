@@ -2,11 +2,12 @@ import {createContext,useContext,useEffect,useState,type ReactNode} from 'react'
 import {createAccount,authenticate,deleteAccount,findAccount,saveAccountPhoto,saveAccountDetails,type AccountDetailsInput,type AccountRole,type LocalAccount} from './repository';
 import {stopPlayback} from '../audio/playback';
 import {ensureAccountReader} from './reader';
+import {LocalRepository,accountStorageKey} from '../data/repository';
 
 const SESSION='basabuddy:account-session';
 interface AccountContext {
  account:LocalAccount|null; ready:boolean; notice:string;
- signup:(input:{name:string;email:string;password:string;grade?:string;role?:AccountRole;photo?:string})=>Promise<LocalAccount>;
+ signup:(input:{name:string;email:string;password:string;grade?:string;role?:AccountRole;photo?:string;language?:'fil'|'en'})=>Promise<LocalAccount>;
  login:(email:string,password:string)=>Promise<LocalAccount>;
  logout:()=>void;
  photo:(photo?:string)=>Promise<void>;
@@ -42,10 +43,10 @@ export function AccountProvider({children}:{children:ReactNode}){
   if(channel)channel.onmessage=refresh;
   return()=>{active=false;window.removeEventListener('focus',refresh);channel?.close();};
  },[account?.id]);
- function activate(next:LocalAccount){ensureAccountReader(next);sessionStorage.setItem(SESSION,next.id);stopPlayback();setNotice('');setAccount(next);}
+ function activate(next:LocalAccount,language?:'fil'|'en'){ensureAccountReader(next);if(language){const repository=new LocalRepository(accountStorageKey(next.id));repository.save({...repository.load(),language});}sessionStorage.setItem(SESSION,next.id);stopPlayback();setNotice('');setAccount(next);}
  function logout(){sessionStorage.removeItem(SESSION);stopPlayback();setAccount(null);setNotice('');}
  return <Context.Provider value={{account,ready,notice,
-  signup:async input=>{const next=await createAccount(input);activate(next);return next;},
+  signup:async input=>{const next=await createAccount(input);activate(next,input.language);return next;},
   login:async(email,password)=>{const next=await authenticate(email,password);activate(next);return next;},
   logout,
   photo:async value=>{if(!account)throw new Error('Log in before adding a photo.');const next=await saveAccountPhoto(account.id,value);setAccount(current=>current?.id===next.id?next:current);},
