@@ -1,4 +1,4 @@
-.account-shell>.sound-bar{display:none}
+.account-shell>.sound-bar,.account-shell>.home-indicator{display:none}
 .account-screen{padding-bottom:20px;color:#17176d}
 .account-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 24px;min-height:44px}
 .account-header>a{width:40px;height:44px;display:grid;place-items:center;color:#087fff;flex-shrink:0}
@@ -21,7 +21,7 @@
 .account-input input::placeholder{color:#7085b4;opacity:1}
 .account-input .password-toggle{width:34px;min-width:34px;min-height:44px;display:grid;place-items:center;background:transparent;color:#087fff;padding:0;margin-right:-5px}
 .account-field>input{width:100%;min-height:54px;padding:12px 14px;border:2px solid #c9e3ff;border-radius:16px;color:#17176d;background:#fff}
-.account-submit{width:100%;background:#087fff;box-shadow:none;display:block;margin-top:4px}
+.primary.account-submit{width:100%;background:#087fff;box-shadow:none;display:block;margin-top:4px}
 .password-help{margin-top:-12px}
 .account-guest{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:15px 12px;min-height:54px;background:#e5f5ff;border:1px solid #d3edff;border-radius:18px;font-weight:900;color:#087fff;text-align:center;margin:22px 0}
 .account-guest svg{width:22px;flex-shrink:0}

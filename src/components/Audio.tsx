@@ -1,10 +1,12 @@
+import {useTranslation} from '../app/i18n';
 import {useEffect,useRef,useState} from 'react';
 import {Volume2,VolumeX,Mic,Square} from 'lucide-react';
 import {Art} from './UI';
+import {useApp} from '../app/context';
 import {bundledClip,claimPlayback,findVoice,readVoices,stopPlayback} from '../audio/playback';
 import {isMuted,setMuted,useMuted} from '../audio/preferences';
 import type {Language} from '../domain/model';
-export function AudioButton({text,lang,slow=false}:{text:string;lang:Language;slow?:boolean}) {
+export function AudioButton({text,lang,slow=false}:{text:string;lang:Language;slow?:boolean}) {const t=useTranslation();
  const muted = useMuted();
  const [state,setState] = useState('');
  const [playing,setPlaying] = useState(false);
@@ -12,7 +14,7 @@ export function AudioButton({text,lang,slow=false}:{text:string;lang:Language;sl
  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
  const waitingForVoices = useRef(false);
  const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
- const f = lang === 'fil';
+ const f = useApp().data.language === 'fil';
 
  useEffect(() => {
    const synth = window.speechSynthesis;
@@ -130,13 +132,13 @@ export function AudioButton({text,lang,slow=false}:{text:string;lang:Language;sl
  }
  return <div className="audio-wrap"><button type="button" className="soft audio" aria-pressed={playing} aria-disabled={muted} onClick={play}>
    {playing ? <Square size={22}/> : <Volume2 size={22}/>}
-   {playing ? (f ? 'Ihinto' : 'Stop') : slow ? (f ? 'Dahan-dahan' : 'Slow') : (f ? 'Pakinggan' : 'Listen')}
- </button>{state && <small role="status">{state}</small>}</div>;
+   {playing ? (f ? t("Ihinto") : t("Stop")) : slow ? (f ? t("Dahan-dahan") : t("Slow")) : (f ? t("Pakinggan") : t("Listen"))}
+ </button>{state && <small role="status">{t(state)}</small>}</div>;
 }
 export function AudioControls({text,lang}:{text:string;lang:Language}) {
  return <div className="row audio-controls"><AudioButton text={text} lang={lang}/><AudioButton text={text} lang={lang} slow/></div>;
 }
-export function Recorder({lang}:{lang:Language}){
+export function Recorder({lang}:{lang:Language}){const t=useTranslation();
  const muted = useMuted();
  const replay = useRef<HTMLAudioElement|null>(null);
  const replayRelease = useRef<(() => void)|undefined>(undefined);
@@ -146,13 +148,13 @@ export function Recorder({lang}:{lang:Language}){
  const stop=()=>{if(recorder.current?.state==='recording')recorder.current.stop();stream.current?.getTracks().forEach(t=>t.stop());clearTimeout(timer.current);setRecording(false);release.current?.();};
  useEffect(()=>{live.current=true;return()=>{live.current=false;recorder.current?.state==='recording'&&recorder.current.stop();stream.current?.getTracks().forEach(t=>t.stop());clearTimeout(timer.current);URL.revokeObjectURL(urlRef.current);};},[]);
  async function start(){if(pending)return;stopPlayback();setPending(true);try{setStatus(lang==='fil'?'Hinihintay ang mikropono…':'Waiting for microphone…');const s=await navigator.mediaDevices.getUserMedia({audio:true});if(!live.current||document.hidden){s.getTracks().forEach(t=>t.stop());return;}stream.current=s;const r=new MediaRecorder(s);recorder.current=r;const chunks:BlobPart[]=[];let releaseRecording=()=>{};r.ondataavailable=e=>chunks.push(e.data);r.onstop=()=>{s.getTracks().forEach(t=>t.stop());if(!live.current)return;URL.revokeObjectURL(urlRef.current);const u=URL.createObjectURL(new Blob(chunks,{type:r.mimeType}));urlRef.current=u;setUrl(u);setStatus(lang==='fil'?'Pakinggan ang iyong boses.':'Listen to your recording.');setRecording(false);releaseRecording();};releaseRecording = claimPlayback(stop);release.current = releaseRecording;r.start();setRecording(true);setStatus(lang==='fil'?'Nagre-record (hanggang 30 segundo)':'Recording (up to 30 seconds)');timer.current=setTimeout(stop,30000);}catch{stream.current?.getTracks().forEach(t=>t.stop());setStatus(lang==='fil'?'Hindi magamit ang mikropono. Maaari ka pa ring bumasa at magpatuloy.':'Microphone unavailable. You can read aloud and continue without recording.');}finally{if(live.current)setPending(false);}}
- return <div className="record"><button className="mic" disabled={pending} onClick={recording?stop:start} aria-label={recording?'Stop recording':'Record and listen'}>{recording?<Square/>:<Mic/>}</button><p role="status">{status||(lang==='fil'?'Opsyonal: i-record at pakinggan':'Optional: record and listen')}</p>{url&&<audio ref={replay} controls src={url} muted={muted} aria-label={lang==='fil'?'Iyong boses':'Your recording'} onPlay={e=>{const audio=e.currentTarget;if(isMuted()){audio.pause();return;}stop();replayRelease.current=claimPlayback(()=>audio.pause());audio.volume=0.65;}} onEnded={()=>replayRelease.current?.()}/>}<small>{lang==='fil'?'Dito lang ang boses mo. Walang pag-upload o pagmamarka.':'Your voice stays in this tab. No uploads or pronunciation scores.'}</small></div>;
+ return <div className="record"><button className="mic" disabled={pending} onClick={recording?stop:start} aria-label={recording?t("Stop recording"):t("Record and listen")}>{recording?<Square/>:<Mic/>}</button><p role="status">{status||(lang==='fil'?t("Opsyonal: i-record at pakinggan"):t("Optional: record and listen"))}</p>{url&&<audio ref={replay} controls src={url} muted={muted} aria-label={lang==='fil'?t("Iyong boses"):t("Your recording")} onPlay={e=>{const audio=e.currentTarget;if(isMuted()){audio.pause();return;}stop();replayRelease.current=claimPlayback(()=>audio.pause());audio.volume=0.65;}} onEnded={()=>replayRelease.current?.()}/>}<small>{lang==='fil'?t("Dito lang ang boses mo. Walang pag-upload o pagmamarka."):t("Your voice stays in this tab. No uploads or pronunciation scores.")}</small></div>;
 }
 
 export function StoryArt(_props:{text:string;lang:Language}){return <div className="story-visual"><Art name="story" className="story-art"/></div>;}
 
-export function SoundToggle({lang}:{lang:Language}) {
+export function SoundToggle({lang}:{lang:Language}) {const t=useTranslation();
  const muted = useMuted();
- return <button className="sound-toggle" type="button" aria-pressed={muted} onClick={()=>setMuted(!muted)} aria-label={lang==='fil'?(muted?'I-on ang tunog':'I-mute ang tunog'):(muted?'Unmute sound':'Mute sound')}>
- {muted?<VolumeX size={19}/>:<Volume2 size={19}/>}<span>{lang==='fil'?(muted?'Tunog: off':'Tunog: on'):(muted?'Sound off':'Sound on')}</span></button>;
+ return <button className="sound-toggle" type="button" aria-pressed={muted} onClick={()=>setMuted(!muted)} aria-label={lang==='fil'?(muted?t("I-on ang tunog"):t("I-mute ang tunog")):(muted?t("Unmute sound"):t("Mute sound"))}>
+ {muted?<VolumeX size={19}/>:<Volume2 size={19}/>}<span>{lang==='fil'?(muted?t("Tunog: off"):t("Tunog: on")):(muted?t("Sound off"):t("Sound on"))}</span></button>;
 }
