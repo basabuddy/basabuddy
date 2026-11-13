@@ -100,10 +100,10 @@ function AccountDetails({disabled,onBusy}:{disabled:boolean;onBusy:(value:boolea
   finally{setBusy(false);onBusy(false);}
  }
  return <section className="account-details" aria-labelledby="account-details-title"><h2 id="account-details-title">{t("Account details")}</h2><form className="account-form" onSubmit={event=>void submit(event)}>
+  <RoleField value={role} onChange={value=>{setRole(value);setSaved('');}} disabled={locked} prominent/>
   <div className="account-field"><label htmlFor="edit-account-name">{t("Your name")}</label><input id="edit-account-name" value={name} onChange={e=>{setName(e.target.value);setSaved('');}} autoComplete="nickname" maxLength={50} required disabled={locked}/></div>
   <div className="account-field"><label htmlFor="edit-account-email">{t("Account email")}</label><input id="edit-account-email" type="email" value={email} onChange={e=>{setEmail(e.target.value);setSaved('');}} autoComplete="email" maxLength={254} required disabled={locked}/></div>
   <GradeField value={grade} onChange={value=>{setGrade(value);setSaved('');}} disabled={locked}/>
-  <RoleField value={role} onChange={value=>{setRole(value);setSaved('');}} disabled={locked}/>
   <small>{role==='teacher'?t("Teacher accounts open the teacher area when logging in. The teacher PIN is still required."):t("Student accounts open the reading home when logging in.")}</small>
   <small>{t("The first reader inherits this name and grade while it still uses your account name. Other readers keep their own details.")}</small>
   <button className="text-button" type="button" aria-expanded={changingPassword} disabled={locked} onClick={()=>{setChangingPassword(!changingPassword);setNewPassword('');setConfirm('');setSaved('');}}>{t("Change password")}</button>
